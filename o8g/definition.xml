@@ -1,94 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        name="Star Wars CCG"
-        id="8cf86807-9807-4d88-b8c6-81644c45b65e" 
+        name="Legendary: Buffy The Vampire Slayer"
+        id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.2.75.0"
         version="3.2.1.2"
 		scriptVersion="3.1.0.2"
         markersize="16"	
-        tags="SW CCG"
-        description="Star Wars Customizable Card Game by Decipher"
-        setsurl="http://octgn.gamersjudgement.com/wordpress/starwarsccg/"
-        gameurl="http://octgn.gamersjudgement.com/wordpress/starwarsccg/"
+        tags=""
+        description="Buffy standalone expansion of the Legendary Deckbuilding Game by Upper Deck"
+        setsurl=""
+        gameurl=""
         authors="Bullgator"
-        iconurl="https://i.imgur.com/SzZsIYj.png">
+        iconurl="https://imgur.com/NysMFtm">
     <scripts>
       <script src="scripts/actions.py" />
     </scripts>
-    <proxygen definitionsrc="proxy/proxydef.xml">
+	<events>
+	</events>
+	<sounds>
+	</sounds>
+	<fonts>
+	</fonts>
+	<symbols>
+	</symbols>
+	<proxygen definitionsrc="proxy/proxydef.xml">
     </proxygen>
-    <card back="cards/back.png" front="cards/front.png" width="88" height="88" cornerRadius="4">
-        <property name="Side" type="String" textKind="Tokens" />
-        <property name="Expansion" type="String" textKind="Tokens" />
-        <property name="CardType" type="String" textKind="Tokens" />
-        <property name="Rarity" type="String" textKind="Tokens" />
-        <property name="Unique" type="String" textKind="Tokens" />
-        <property name="Destiny" type="String" textKind="Tokens" />
-        <property name="DarkLocationForce" type="String" textKind="Tokens" />
-        <property name="LightLocationForce" type="String" textKind="Tokens" />
-        <property name="DarkLocationText" type="String" textKind="Tokens" />
-        <property name="LightLocationText" type="String" textKind="Tokens" />
-        <property name="Parsec" type="String" textKind="Tokens" />
-        <property name="Icons" type="String" textKind="Tokens" />
-        <property name="IconPlanet" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconSpace" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconMobile" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconInterior" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconExterior" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconUnderground" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconCreature" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconVehicle" type="String" textKind="Tokens" hidden="True"/>
-        <property name="IconStarship" type="String" textKind="Tokens" hidden="True"/>
-        <property name="Lore" type="String" textKind="Tokens" />
-        <property name="Power" type="String" textKind="Tokens" />
-        <property name="Ability" type="String" textKind="Tokens" />
-        <property name="Maneuver" type="String" textKind="Tokens" />
-        <property name="Armor" type="String" textKind="Tokens" />
-        <property name="LandspeedHyperspeed" type="String" textKind="Tokens" />
-        <property name="FirstBox" type="String" textKind="Tokens" />
-        <property name="SecondBox" type="String" textKind="Tokens" />
-        <property name="GameText" type="String" textKind="Tokens" />
-        <property name="Deployment" type="String" textKind="Tokens" />
-        <property name="Attrition" type="String" textKind="Tokens" />
-        <property name="PilotDark" type="String" textKind="Tokens" hidden="True"/>
-        <property name="PilotLight" type="String" textKind="Tokens" hidden="True"/>
-        <property name="Warrior" type="String" textKind="Tokens" hidden="True"/>
-        <property name="NavComputer" type="String" textKind="Tokens" hidden="True"/>
-        <property name="PermWeapon" type="String" textKind="Tokens" hidden="True"/>
-        <property name="ScompLink" type="String" textKind="Tokens" hidden="True"/>
+	<phases>
+	</phases>
+	<documents>
+	</documents>
+	<gameModes>
+	</gameModes>
+	<globalvariables>
+	</globalvariables>
+	<card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="4">
+        <property name="Type" type="String" textKind="Tokens" />
+        <property name="Group" type="String" textKind="Tokens" />
+        <property name="Team" type="String" textKind="Tokens" />
+		<property name="Class" type="String" textKind="Tokens" />
+		<property name="Cost" type="String" textKind="Tokens" />
+		<property name="Recruit" type="String" textKind="Tokens" />
+		<property name="Fight" type="String" textKind="Tokens" />
+		<property name="Victory Points" type="String" textKind="Tokens" />
+		<property name="Text" type="String" textKind="Tokens" />
+		<property name="Attack" type="String" textKind="Tokens" />
+		<property name="Defense" type="String" textKind="Tokens" />
+		<property name="Health" type="String" textKind="Tokens" />
+		<property name="Text" type="String" textKind="Tokens"  />
     </card>
-    <table name="Table" visibility="undefined" ordered="False" width="800" height="650" background="background/tabletop.png" backgroundStyle="uniformToFill">
-        <cardaction menu="Flip" shortcut="ctrl+f" execute="flip" />
+	<gameboards>
+		<property src="background/playmat.png" x="10" y="10" width="1900" height="1180" />
+	</gameboards>
+	<table>
+		<property visibility="undefined" width="1920" height="1200" background="" backgroundStyle="uniformToFill">
+		<cardaction menu="Flip" shortcut="ctrl+f" execute="flip" />
         <cardaction menu="Tap" shortcut="ctrl+t" default="True" execute="tap" />
         <cardaction menu="Discard from Table" shortcut="del" execute="discard" />
     </table>
     <player>
-        <hand name="Hand" visibility="me" ordered="False" width="88" height="88" icon="groups/hand.png">
+		<counter>
+		</counter>
+		<globalvariable>
+		</globalvariable>
+		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" icon="">
             <groupaction menu="Mulligan" shortcut="ctrl+m" execute="mulligan" />
             <cardaction menu="Discard from Hand" shortcut="del" execute="discard" />
             <cardaction menu="Tap" shortcut="ctrl+t" default="True" execute="tap" />
         </hand>
-        <group name="Force" visibility="none" width="88" height="88" icon="groups/Force-Dark.png">
-            <groupaction menu="Use Force" shortcut="ctrl+u" execute="useForce" />
+        <group name="Deck" visibility="none" width="63" height="88" icon="">
+			<groupaction menu="Shuffle" shortcut="ctrl+s" execute="shuffle" />
             <groupaction menu="Draw into Hand" shortcut="ctrl+d" execute="draw" />
-            <cardaction menu="Discard to Lost Pile" shortcut="del" execute="discard" />
+            <cardaction menu="Discard" shortcut="del" execute="discard" />
         </group>
-        <group name="Reserve" visibility="none" width="88" height="88" icon="groups/Reserve.png">
-            <groupaction menu="Shuffle" shortcut="ctrl+s" execute="shuffle" />
-            <groupaction menu="Draw Opening Hand" shortcut="ctrl+h" execute="drawOpeningHand" />
-            <groupaction menu="Activate Force" shortcut="ctrl+a" execute="activateForce" />
-            <cardaction menu="Discard to Lost Pile" shortcut="del" execute="discard" />
-        </group>
-        <group name="Used" visibility="none" width="88" height="88" icon="groups/Used.png">
+        <group name="Discard" visibility="none" width="63" height="88" icon="">
             <groupaction menu="Recirculate" shortcut="ctrl+r" execute="recirculate" />
-        </group>
-        <group name="Lost" visibility="all" width="88" height="88" icon="groups/discardpile.png">
         </group>
     </player>
     <shared>
     </shared>
     <deck>
-      <section name="Main" group="Reserve" />
+      <section name="Deck" group="Deck" />
     </deck>
+	<sharedDeck>
+	</sharedDeck>
 </game>
