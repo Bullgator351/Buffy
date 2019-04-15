@@ -3,37 +3,17 @@
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         name="Legendary: Buffy The Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
-        octgnVersion="3.2.75.0"
-        version="3.2.1.2"
+        octgnVersion="3.3.132.0"
+        version="1.0.0.9"
 		scriptVersion="3.1.0.2"
         markersize="16"	
-        tags=""
+        tags="Legendary Buffy"
         description="Buffy standalone expansion of the Legendary Deckbuilding Game by Upper Deck"
-        setsurl=""
-        gameurl=""
+        gameurl="https://github.com/Bullgator351/Buffy"
+		setsurl="https://github.com/Bullgator351/Buffy"
         authors="Bullgator"
         iconurl="https://imgur.com/NysMFtm">
-    <scripts>
-      <script src="scripts/actions.py" />
-    </scripts>
-	<events>
-	</events>
-	<sounds>
-	</sounds>
-	<fonts>
-	</fonts>
-	<symbols>
-	</symbols>
-	<proxygen definitionsrc="proxy/proxydef.xml">
-    </proxygen>
-	<phases>
-	</phases>
-	<documents>
-	</documents>
-	<gameModes>
-	</gameModes>
-	<globalvariables>
-	</globalvariables>
+	<proxygen definitionsrc="proxy/proxydef.xml" />
 	<card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="4">
         <property name="Type" type="String" textKind="Tokens" />
         <property name="Group" type="String" textKind="Tokens" />
@@ -44,44 +24,11 @@
 		<property name="Fight" type="String" textKind="Tokens" />
 		<property name="Victory Points" type="String" textKind="Tokens" />
 		<property name="Text" type="String" textKind="Tokens" />
-		<property name="Attack" type="String" textKind="Tokens" />
-		<property name="Defense" type="String" textKind="Tokens" />
-		<property name="Health" type="String" textKind="Tokens" />
-		<property name="Text" type="String" textKind="Tokens"  />
     </card>
-	<gameboards>
-		<property src="background/playmat.png" x="10" y="10" width="1900" height="1180" />
-	</gameboards>
-	<table>
-		<property visibility="undefined" width="1920" height="1200" background="" backgroundStyle="uniformToFill">
-		<cardaction menu="Flip" shortcut="ctrl+f" execute="flip" />
-        <cardaction menu="Tap" shortcut="ctrl+t" default="True" execute="tap" />
-        <cardaction menu="Discard from Table" shortcut="del" execute="discard" />
-    </table>
-    <player>
-		<counter>
-		</counter>
-		<globalvariable>
-		</globalvariable>
-		<hand name="Hand" visibility="me" ordered="False" width="63" height="88" icon="">
-            <groupaction menu="Mulligan" shortcut="ctrl+m" execute="mulligan" />
-            <cardaction menu="Discard from Hand" shortcut="del" execute="discard" />
-            <cardaction menu="Tap" shortcut="ctrl+t" default="True" execute="tap" />
-        </hand>
-        <group name="Deck" visibility="none" width="63" height="88" icon="">
-			<groupaction menu="Shuffle" shortcut="ctrl+s" execute="shuffle" />
-            <groupaction menu="Draw into Hand" shortcut="ctrl+d" execute="draw" />
-            <cardaction menu="Discard" shortcut="del" execute="discard" />
-        </group>
-        <group name="Discard" visibility="none" width="63" height="88" icon="">
-            <groupaction menu="Recirculate" shortcut="ctrl+r" execute="recirculate" />
-        </group>
+	<table name="Table" visibility="undefined" width="1620" height="836" background="background/playmat.png" backgroundStyle="uniform" />
+    <player summary="Hand:{#Hand}">
+		<hand name="Hand" visibility="me" ordered="False" />
+        <group name="Deck" visibility="none" />
+        <group name="Discard" visibility="none" />
     </player>
-    <shared>
-    </shared>
-    <deck>
-      <section name="Deck" group="Deck" />
-    </deck>
-	<sharedDeck>
-	</sharedDeck>
 </game>
