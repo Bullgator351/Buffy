@@ -4,7 +4,7 @@
         name="Buffy"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.1.1"
+        version="1.0.2.10"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -12,12 +12,13 @@
         gameurl="https://github.com/Bullgator351/Buffy"
 		setsurl="https://www.dropbox.com/s/r9c2ujd87s881t9/Buffy.o8c?dl=0"
         authors="Bullgator"
-        iconurl="https://imgur.com/NysMFtm">
+        iconurl="https://imgur.com/NysMFtm"
+		usetwosidedtable="False" >
 	<scripts>
 		<script src="scripts/actions.py" />
 	</scripts>
 	<proxygen definitionsrc="proxy/proxydef.xml" />
-	<card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="4">
+	<card back="cards/back.png" front="cards/front.png" width="132" height="180" cornerRadius="8">
         <property name="Type" type="String" textKind="Tokens" />
         <property name="Group" type="String" textKind="Tokens" />
         <property name="Team" type="String" textKind="Tokens" />
@@ -28,27 +29,44 @@
 		<property name="Victory Points" type="String" textKind="Tokens" />
 		<property name="Text" type="String" textKind="Tokens" />
     </card>
-	<table name="Table" visibility="undefined" width="1620" height="836" background="background/playmat.png" backgroundStyle="uniform" />
+	<gameboards src="background/playmat.png" width="1620" height="836" x="-810" y="-518" />
+	<table name="Table" visibility="undefined" width="1920" height="1080" background="table/sorrel-pear.png" backgroundStyle="uniform" >
+		<groupaction menu="Create the Dark/Light token" default="False" execute="createDarkLightToken" />
+		<groupaction menu="Coin Flip" default="False" execute="flipCoin" />
+		<groupaction menu="Random Number" default="False" execute="randomNumber" />
+		<cardaction menu="Flip Card" default="False" shortcut="ctrl+F" execute="flipcard" />
+		
+	</table>
     <player summary="Courage Tokens:">
-		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" />
-        <group name="Deck" visibility="none" icon="groups/deck.png" />
-        <group name="Discard" visibility="none" icon="groups/discardpile.png" />
+		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
+			<groupaction menu="Random Discard" default="False" execute="randomDiscard" />
+		</hand>
+        <group name="Player Deck" visibility="none" icon="groups/deck.png" >
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+		</group>
+        <group name="Discard Pile" visibility="none" icon="groups/discardpile.png" />
     </player>
 	<shared summary="Dark/Light:">
 		<group name="Big Bad" visibility="all" icon="groups/default.png" />
 		<group name="Scheme" visibility="all" icon="groups/default.png" />
 		<group name="Twists" visibility="all" icon="groups/default.png" />
-		<group name="Strikes" visibility="all" icon="groups/default.png" />
+		<group name="Master Strikes" visibility="all" icon="groups/default.png" />
 		<group name="Escaped Villains" visibility="all" icon="groups/default.png" />
 		<group name="KO Pile" visibility="all" icon="groups/default.png" />
 		<group name="Potential Slayers" visibility="all" icon="groups/default.png" />
 		<group name="Wounds" visibility="all" icon="groups/default.png" />
-		<group name="Bystanders" visibility="all" icon="groups/default.png" />
-		<group name="Villain Deck" visibility="none" icon="groups/default.png" />
-		<group name="Hero Deck" visibility="none" icon="groups/default.png" />
+		<group name="Bystanders" visibility="none" icon="groups/default.png" >
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+		</group>
+		<group name="Villain Deck" visibility="none" icon="groups/default.png" >
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+		</group>
+		<group name="Hero Deck" visibility="none" icon="groups/default.png" >
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+		</group>
 	</shared>
 	<deck>
-		<section name="Grey" group="Deck" />
+		<section name="Grey" group="Player Deck" />
 	</deck>
 	<sharedDeck>
 		<section name="Big Bads" group="Big Bad" />
