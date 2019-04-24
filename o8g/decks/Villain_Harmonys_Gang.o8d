@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True">
+    <card qty="2" id="dc9e883d-d3e9-4582-a10f-fe284ee4776f">Mort</card>
+    <card qty="2" id="fa573ee1-4a2e-4894-a4f4-6cde126c4860">Cyrus</card>
+    <card qty="2" id="0fa29608-60a5-4924-b0d8-259b50be7d99">Peaches</card>
+    <card qty="2" id="40e49812-2a19-429f-8301-6ebecbfe7e80">Harmony Kendall</card>
+  </section>
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True" />
+  <notes><![CDATA[]]></notes>
+</deck>

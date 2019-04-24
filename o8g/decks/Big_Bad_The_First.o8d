@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True">
+    <card qty="1" id="b209facb-288a-4cf3-9d58-934c386dc39e">The First</card>
+  </section>
+  <section name="Big Bad Tactics" shared="True">
+    <card qty="1" id="39d44448-761c-4461-b835-df97e10132da">Beyond Death</card>
+    <card qty="1" id="f8a52aaa-1ebf-4ae9-8849-8497c8bcea68">Beyond Sin</card>
+    <card qty="1" id="72d6d03b-39ad-4776-82b3-4e4bc2adfa1c">From Beneath You</card>
+    <card qty="1" id="9b656d9c-72be-4045-accc-7093a7116947">It Devours</card>
+  </section>
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True">
+    <card qty="2" id="c4694629-5f87-4cfb-9976-45c22fd71877">Caleb</card>
+    <card qty="2" id="46630c81-0ccc-46b1-88e5-a95d887f062b">The Firsts Avatars</card>
+    <card qty="2" id="8e957874-cf9c-476c-9ba8-23da1c764f5f">Gnarl</card>
+    <card qty="2" id="941f6880-57b3-4e0d-814a-6feb84e55c9d">Charlotte</card>
+  </section>
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True" />
+  <notes><![CDATA[]]></notes>
+</deck>

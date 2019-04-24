@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="3" id="a72633ea-c362-43a8-bb32-ab8c68b51f5d">Time to Slay</card>
+    <card qty="5" id="ec4aac09-5d94-4793-85f3-ac388dba5f2c">Descendant of a Toaster Oven</card>
+    <card qty="5" id="6c19bed6-5f4d-45de-8cbc-8d0249a3f28e">Robo-Buffy</card>
+    <card qty="1" id="834b689a-d48c-4e4e-a703-e9c7766f6f6b">Sinister Attraction</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

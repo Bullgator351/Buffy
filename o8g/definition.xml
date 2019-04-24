@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        name="Buffy"
+        name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.2.10"
+        version="1.0.2.12"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -18,7 +18,7 @@
 		<script src="scripts/actions.py" />
 	</scripts>
 	<proxygen definitionsrc="proxy/proxydef.xml" />
-	<card back="cards/back.png" front="cards/front.png" width="132" height="180" cornerRadius="8">
+	<card back="cards/back.png" front="cards/front.png" width="128" height="180" cornerRadius="8">
         <property name="Type" type="String" textKind="Tokens" />
         <property name="Group" type="String" textKind="Tokens" />
         <property name="Team" type="String" textKind="Tokens" />
