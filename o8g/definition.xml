@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.2.12"
+        version="1.0.3.12"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -19,23 +19,23 @@
 	</scripts>
 	<proxygen definitionsrc="proxy/proxydef.xml" />
 	<card back="cards/back.png" front="cards/front.png" width="128" height="180" cornerRadius="8">
-        <property name="Type" type="String" textKind="Tokens" />
-        <property name="Group" type="String" textKind="Tokens" />
-        <property name="Team" type="String" textKind="Tokens" />
-		<property name="Class" type="String" textKind="Tokens" />
-		<property name="Cost" type="String" textKind="Tokens" />
-		<property name="Recruit" type="String" textKind="Tokens" />
-		<property name="Fight" type="String" textKind="Tokens" />
-		<property name="Victory Points" type="String" textKind="Tokens" />
-		<property name="Text" type="String" textKind="Tokens" />
+        <property name="card_type" type="String" textKind="Tokens" />
+        <property name="card_group" type="String" textKind="Tokens" />
+        <property name="card_team" type="String" textKind="Tokens" />
+		<property name="card_class" type="String" textKind="Tokens" />
+		<property name="cost" type="String" textKind="Tokens" />
+		<property name="recruit_value" type="String" textKind="Tokens" />
+		<property name="recruit_bonus" type="String" textKind="Tokens" />
+		<property name="fight_value" type="String" textKind="Tokens" />
+		<property name="fight_bonus" type="String" textKind="Tokens" />
+		<property name="victory_points" type="String" textKind="Tokens" />
+		<property name="card_text" type="String" textKind="Tokens" />
     </card>
 	<gameboards src="background/playmat.png" width="1620" height="836" x="-810" y="-518" />
 	<table name="Table" visibility="undefined" width="1920" height="1080" background="table/sorrel-pear.png" backgroundStyle="uniform" >
-		<groupaction menu="Create the Dark/Light token" default="False" execute="createDarkLightToken" />
 		<groupaction menu="Coin Flip" default="False" execute="flipCoin" />
 		<groupaction menu="Random Number" default="False" execute="randomNumber" />
 		<cardaction menu="Flip Card" default="False" shortcut="ctrl+F" execute="flipcard" />
-		
 	</table>
     <player summary="Courage Tokens:">
 		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
@@ -46,10 +46,10 @@
 		</group>
         <group name="Discard Pile" visibility="none" icon="groups/discardpile.png" />
     </player>
-	<shared summary="Dark/Light:">
-		<group name="Big Bad" visibility="all" icon="groups/default.png" />
-		<group name="Scheme" visibility="all" icon="groups/default.png" />
-		<group name="Twists" visibility="all" icon="groups/default.png" />
+	<shared summary="Dark_Light:">
+		<group name="BigBad_Pile" visibility="all" icon="groups/default.png" />
+		<group name="Scheme_Pile" visibility="all" icon="groups/default.png" />
+		<group name="Twists_Pile" visibility="all" icon="groups/default.png" />
 		<group name="Master Strikes" visibility="all" icon="groups/default.png" />
 		<group name="Escaped Villains" visibility="all" icon="groups/default.png" />
 		<group name="KO Pile" visibility="all" icon="groups/default.png" />

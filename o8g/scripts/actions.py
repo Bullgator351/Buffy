@@ -23,9 +23,8 @@ def flip(card, x = 0, y = 0):
 # Table group actions
 #---------------------------------------------------------------------------
 
-# (not working)
-# def createDarkLightToken(group, x=0, y=0):
-# 	moveDarkLightToken(x, y)
+def createDarkLightToken(group, x=0, y=0):
+ 	moveDarkLightToken(x, y)
 
 def moveCard(model, x, y):
 	for c in table:
