@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.3.13"
+        version="1.0.3.16"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -50,10 +50,10 @@
 		<group name="BigBad_Pile" visibility="all" icon="groups/default.png" />
 		<group name="Scheme_Pile" visibility="all" icon="groups/default.png" />
 		<group name="Twists_Pile" visibility="all" icon="groups/default.png" />
-		<group name="Master Strikes" visibility="all" icon="groups/default.png" />
-		<group name="Escaped Villains" visibility="all" icon="groups/default.png" />
-		<group name="KO Pile" visibility="all" icon="groups/default.png" />
-		<group name="Potential Slayers" visibility="all" icon="groups/default.png" />
+		<group name="Master_Strikes" visibility="all" icon="groups/default.png" />
+		<group name="Escaped_Villains" visibility="all" icon="groups/default.png" />
+		<group name="KO_Pile" visibility="all" icon="groups/default.png" />
+		<group name="Potential_Slayers" visibility="all" icon="groups/default.png" />
 		<group name="Wounds" visibility="all" icon="groups/default.png" />
 		<group name="Bystanders" visibility="none" icon="groups/default.png" >
 			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
@@ -69,16 +69,16 @@
 		<section name="Grey" group="Player Deck" />
 	</deck>
 	<sharedDeck>
-		<section name="Big Bads" group="Big Bad" />
-		<section name="Big Bad Tactics" group="Big Bad" />
-		<section name="Schemes" group="Scheme" />
+		<section name="Big Bads" group="BigBad_Pile" />
+		<section name="Big Bad Tactics" group="BigBad_Pile" />
+		<section name="Schemes" group="Scheme_Pile" />
 		<section name="Master Strikes" group="Villain Deck" />
 		<section name="Scheme Twists" group="Villain Deck" />
 		<section name="Villains" group="Villain Deck" />
 		<section name="Henchmen" group="Villain Deck" />
 		<section name="Bystanders" group="Bystanders" />
 		<section name="Wounds" group="Wounds" />
-		<section name="Potential Slayers" group="Potential Slayers" />
+		<section name="Potential Slayers" group="Potential_Slayers" />
 		<section name="Heroes" group="Hero Deck" />
 	</sharedDeck>		
 </game>

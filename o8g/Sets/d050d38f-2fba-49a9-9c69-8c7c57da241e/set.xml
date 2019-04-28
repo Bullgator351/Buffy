@@ -1,1851 +1,1851 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Core Set" id="d050d38f-2fba-49a9-9c69-8c7c57da241e" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.3.12" version="0.0.1.3">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Core Set" id="d050d38f-2fba-49a9-9c69-8c7c57da241e" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.3.12" version="0.0.1.5">
   <cards>
     <card id="3f874a18-4b9d-47f8-8432-2d4fe2eeb066" name="Billy Ford Fordham">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-		<property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-		<property name="fight_bonus" value="" />
-		<property name="victory_points" value="2" />
-		<property name="card_text" value="Advance the Dark" />
-	</card>
-	<card id="d85da560-a86f-4ab7-8fa1-fa760674aa3e" name="Clem">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-		<property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-		<property name="fight_bonus" value="" />
-		<property name="victory_points" value="1" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="82923315-b972-46b7-a0fa-44d46636fcfb" name="Dawn">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-		<property name="fight_bonus" value="" />
-		<property name="victory_points" value="1" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ad3ccf60-bdb9-4b58-935c-b0812805b2e0" name="Herbert the Pig">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-		<property name="fight_bonus" value="" />
-		<property name="victory_points" value="1" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="66ad4f25-144f-4e86-9007-f6d90cbd9d96" name="Joyce Summers">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-		<property name="fight_bonus" value="" />
-		<property name="victory_points" value="1" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c01d8606-8672-4d3e-8f17-89b4308362af" name="Lily">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="1" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="e0956b81-aaf6-4a7e-9dbd-789c7745fced" name="Potential Slayer">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="3" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ebfb77d8-0fc4-4cf4-a346-df119d73e430" name="Wound">
-		<property name="card_type" value ="Wound" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="0" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="9e8476be-2e3e-4c61-a2a5-bec94c7a3926" name="Convert to Evil">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="b35460b5-9276-4512-bc4f-b952fc0070b8" name="Darkness Falls">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4f33eb54-c18a-48a8-b3d6-da99e839db95" name="Epic Struggle">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text" value="" />
-	</card>
-	<card id="0c91442d-58a8-4378-a2e9-e1e7f7b959dd" name="Hellmouth Opening">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text" value="" />
-	</card>
-	<card id="f77f2fc5-f31a-40b1-9b74-c68ae32d6036" name="Road to Damnation">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="68b31421-5869-4692-94b5-ce7b6c14b87a" name="Summon the Uber Vamps">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ec50da45-3498-4488-8f08-58fe94a2caad" name="Twilight Terror">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="e9e40c36-2c98-48cd-9dbc-9bb4a009b699" name="Vile Agenda">
-		<property name="card_type" value ="Scheme" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="52be400a-0dbb-4926-b901-aa40c05edeb0" name="Scheme Twist">
-		<property name="card_type" value ="Scheme Twist" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="710bfa6b-72b2-4d2c-a885-5c4ee17f4d70" name="Master Strike">
-		<property name="card_type" value ="Master Strike" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="861dad21-004f-4d2b-9951-3dd5785db30d" name="Angelus">
-		<property name="card_type" value ="Big Bad" />
-		<property name="card_group" value="Angelus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7b306aac-aed1-4722-8755-06b69e716c15" name="Clean of Humanity">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Angelus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="27af0477-be4d-4109-abea-de947ab46521" name="Sense of Whimsy">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Angelus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="881cd00c-835f-454a-8f8d-46aef19095fb" name="The Demon With the Angels Face">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Angelus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="91779667-ba49-49d9-bfca-f6eb33ee51fc" name="The Scourge of Europe">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Angelus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ad5a977a-38bf-478f-be23-b5521f69b51c" name="Drusilla">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Scourge of Europe" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="1de36a43-3353-40d1-afcb-974c2697e519" name="Norman Pfister">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Scourge of Europe" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7622b188-676b-431b-b212-8770d8be3603" name="Spike">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Scourge of Europe" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="d9f07dae-5405-4829-9447-8de7a6561b96" name="Octarus">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Scourge of Europe" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="8b702ea8-2fa9-48e7-96ca-7e1c91e24844" name="Patrice">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Scourge of Europe" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="aec3b65f-45ad-444d-b804-0411f26d9133" name="The Judge">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Scourge of Europe" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="e8477fb9-c654-45ec-9ab1-859406e73108" name="Glorificus">
-		<property name="card_type" value ="Big Bad" />
-		<property name="card_group" value="Glorificus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a05156ce-89ac-44b1-9904-82e2df5c8460" name="Search for the Key">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Glorificus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="e15b8bb5-9709-4a68-8eaa-a7bcae1de3be" name="Hell God">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Glorificus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="f2813884-3c8f-43a0-be85-399d4a323e9c" name="The Big Day">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Glorificus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="41809e3d-c002-4c29-a504-9c799fe19320" name="That Which Cannot Be Named">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="Glorificus" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="1ab4df3c-9276-45d9-ae7d-054cd4aa27fc" name="Ben Wilkinson">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Glorys Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ff928218-b825-40a2-8f4d-6be65429059f" name="Doc">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Glorys Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="da23348c-bfce-47ba-8084-05382d6e4165" name="Jinx">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Glorys Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="aac7675b-a08a-4e8d-ade6-5d467c144571" name="Queller Demon">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Glorys Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="821e5de1-29c4-4d1d-805e-b5bad334f04e" name="The High Priest">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Glorys Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="b209facb-288a-4cf3-9d58-934c386dc39e" name="The First">
-		<property name="card_type" value ="Big Bad" />
-		<property name="card_group" value="The First" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="39d44448-761c-4461-b835-df97e10132da" name="Beyond Death">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The First" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="f8a52aaa-1ebf-4ae9-8849-8497c8bcea68" name="Beyond Sin">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The First" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="72d6d03b-39ad-4776-82b3-4e4bc2adfa1c" name="From Beneath You">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The First" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="9b656d9c-72be-4045-accc-7093a7116947" name="It Devours">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The First" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c4694629-5f87-4cfb-9976-45c22fd71877" name="Caleb">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Firsts Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="941f6880-57b3-4e0d-814a-6feb84e55c9d" name="Charlotte">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Firsts Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="8e957874-cf9c-476c-9ba8-23da1c764f5f" name="Gnarl">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Firsts Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="46630c81-0ccc-46b1-88e5-a95d887f062b" name="The Firsts Avatars">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Firsts Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a4d4f87b-8fde-4424-a0eb-4b2836f542b5" name="The Master">
-		<property name="card_type" value ="Big Bad" />
-		<property name="card_group" value="The Master" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="1e646aa7-09ad-4f86-9b89-9a101c5e802b" name="Fruit Punch Mouth">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Master" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4e6279c4-0d13-424f-9374-072ee98d8339" name="King of Vampires">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Master" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="91a5400f-cc59-4f4a-82a9-0cfb7183eff9" name="Pergamum Codex">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Master" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="b0afa24c-ddf3-4dd2-9300-c17095f3e7ce" name="The Harvest">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Master" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c8f8228d-9ee9-47b3-8d9a-874e41695db0" name="Annointed One">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Order of Aurelius" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="564389e4-894a-4b29-8c49-cb0fea3ba102" name="Darla">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Order of Aurelius" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ae236fa8-0fdc-49de-a6bd-23b8d97e171e" name="Luke">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Order of Aurelius" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="f00c5cb6-40f3-41f3-b526-7465c67becdb" name="The Three">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Order of Aurelius" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="38ba9fa3-da92-4f01-b39c-e064a926dd0b" name="The Mayor">
-		<property name="card_type" value ="Big Bad" />
-		<property name="card_group" value="The Mayor" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a0fde656-ec0d-4ff2-9a11-de431351c768" name="Mayor Meat Extra Crispy">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Mayor" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="6ae88dc5-d320-42ad-83bb-d0e55d204888" name="Olvikan">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Mayor" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4bfa4be4-e69a-4541-bf40-80f05433f919" name="The Ascension">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Mayor" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="932694a8-b681-4a2a-b557-ca767558571d" name="The Dedication">
-		<property name="card_type" value ="Tactics" />
-		<property name="card_group" value="The Mayor" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="30763cd4-cee2-447e-b2ae-ff027c087163" name="Balthazar">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Mayors Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c326fcfd-b111-4902-ab53-715ef03d6b61" name="Faith">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Mayors Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="b574b286-1070-4d46-8cbf-5a3c7bb2263f" name="Kakistos">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Mayors Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="d9a3c7d7-9542-458b-b44e-d7c2c5d2236c" name="Mr Trick">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="The Mayors Minions" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="fa573ee1-4a2e-4894-a4f4-6cde126c4860" name="Cyrus">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Harmonys Gang" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="40e49812-2a19-429f-8301-6ebecbfe7e80" name="Harmony Kendall">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Harmonys Gang" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="dc9e883d-d3e9-4582-a10f-fe284ee4776f" name="Mort">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Harmonys Gang" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="0fa29608-60a5-4924-b0d8-259b50be7d99" name="Peaches">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Harmonys Gang" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a35eb1e5-0c99-45e5-8e6a-d1fcdfc3ed1e" name="Gachnar">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Demons" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="1aab2fc5-15c8-4b54-854d-3faea21e2b2b" name="Halfrek">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Demons" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="18a26b2e-8007-4a73-934d-4546c17c4416" name="Sweet">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Demons" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="72cc92e6-e7a5-4165-99f2-6c7cb0a0a797" name="The Gentlemen">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Demons" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="b6abda46-41ad-4633-a618-010ccd18a716" name="Harbingers of Death">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Henchmen" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="77cb5fa5-a102-4af6-8f01-07bb81858e10" name="Hellhounds">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Henchmen" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a7a8e987-fa20-482c-86e1-de2ff73bcfcd" name="Shark Gangsters">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Henchmen" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="0070afb4-86a4-442c-bbcd-92306fb1c3d7" name="Turok-Han Vampires">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Henchmen" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="cd36181f-4bb9-4072-88d7-a73becdb7d8a" name="Vampire Initiate">
-		<property name="card_type" value ="Villain" />
-		<property name="card_group" value="Henchmen" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="97089ad2-a862-46e9-b557-1d067c6e3fb7" name="Initiative Soldier">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Initiative" />
-		<property name="card_class" value="Basic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4d3f1055-706a-4d13-b799-9b835ba2df17" name="Watcher">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Watchers" />
-		<property name="card_class" value="Basic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="e57523a4-5f3c-43c9-8b59-00eb6b2bfa76" name="Ol' Broody Pants">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="035d0f83-96f8-4853-86ba-b5200109b72e" name="Tai Chi Focus">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="47892dbd-59b0-4e67-b6d9-559b03608c89" name="Dead Boy">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="d3f13cac-b208-4362-9a96-1ef98c15fc1b" name="Champion of the Powers">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="60d0f702-ed6a-49ad-8a03-e475da93ec51" name="Must Be Bunnies">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7991f0eb-d31f-41d1-a0a4-51e0acca6c84" name="Newly Human Strangely Literal">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4c5f2726-f812-4270-b2d5-b7a4962ab9c9" name="Is the Money Okay?">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="2f2557b0-18ef-4a81-830b-adea2b0f7778" name="Anyanka - Back in the Vengeance Business">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Strength" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ec4aac09-5d94-4793-85f3-ac388dba5f2c" name="Descendant of a Toaster Oven">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="6c19bed6-5f4d-45de-8cbc-8d0249a3f28e" name="Robo-Buffy">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="834b689a-d48c-4e4e-a703-e9c7766f6f6b" name="Sinister Attraction">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Strength" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a72633ea-c362-43a8-bb32-ab8c68b51f5d" name="Time to Slay">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="9d8c2ceb-b9a1-4df4-b237-c3a6c3cab57d" name="Death is Your Gift">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="35007b0c-fba2-46a4-a7c3-d44b90f946dc" name="Hurricane Buffy">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c5369714-de54-4185-b4e4-e9a47dbb46c6" name="Prophecy Girl">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ca2c8a26-26c3-4502-b33b-69dc803bc73f" name="Slaymaster General">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7076b11b-be2e-40eb-9d08-8908302aa83a" name="Reluctant Ally">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="da5912b9-a878-41cb-a711-0b45c2483b36" name="Lack of Tact">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ad944d0d-35d6-49ba-ac3d-5c52cf0b1247" name="Lone Fashionable Wolf">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4df1c483-366c-4835-be70-bf2a04138b16" name="Queen C">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="5d9975b8-33d9-414b-9ea7-cecf89315adf" name="Firecracker">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="6cd1accc-112e-4ef4-818e-3ec57761f23a" name="Five by Five">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7d0b17b3-6b72-477a-ad51-87cb07eb6d66" name="Hard Fought Redemption">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="5076c8f4-9e5f-4970-ad8f-18c1208d5584" name="Want. Take. Have.">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="eb049786-3bd5-43ee-9b8c-c3e02a878031" name="Circle of Kayless">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="d429393e-0fbc-4ba7-a3a6-223a3c94f942" name="Janna of the Kalderdash">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="3613507b-b343-4efe-a8ee-af6da53f5406" name="Scholastic Ally">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c0344725-38d4-4391-b814-3c15d2b50360" name="Technopagan">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="381fb741-76b7-44a3-a69b-e4a6fbe43a7d" name="Lycanthropic Endowment">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="19868223-9a94-492e-96d9-138938072b8c" name="Residual Werewolf Thing">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />		
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ca7c3418-ddc3-426e-8143-6159759b36ed" name="Trademark Stoicism">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="97e2cb24-2e2c-430a-974e-d7a5b3d214bf" name="We Survived">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="76d027bd-583a-4a4a-94fd-a89ef0c27c45" name="Black Ops">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Initiative" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="25058df7-f436-4f67-a1ed-ccc78cea059e" name="Captain Cardboard">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Initiative" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7619b112-8f6a-4adf-b3bb-8b97bec092a1" name="Regimental Soldier">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Initiative" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a40a6cc3-df54-4b2c-adc2-5c55689e51c2" name="Taser Blaster">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Initiative" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="8940f0d0-952e-42e4-a6b6-834251ad147a" name="Binding Field">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Watchers" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="4336d6fd-765d-4009-9dd7-3f6b8941f055" name="Like a Stevedore">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Watchers" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="b29eb7c7-30a7-415d-b5ce-bd873d2ace14" name="Research Guy">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Watchers" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="89a295ec-bd9b-44d0-a608-ca581728d6cb" name="Sophus">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Watchers" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="36fd3f4a-c453-454b-af08-f9c06875981e" name="Ally for Hire">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7d85b92e-337a-4bf0-b6fc-da76a459e82a" name="Hostile 17">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="64754501-5e4a-4200-bc46-19d0f0284063" name="Randy Giles">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="62437e6d-3c8c-4dd5-8f37-0311c80d8595" name="Trademark Black Leather Jacket">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Supernatural" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="2d355e5e-bd1f-4ba7-bf5b-9d15937eb7d8" name="Dolls Eye Crystal">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="c3690490-fd25-4a45-998e-cb590398c4db" name="Insect Reflection">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="88d53c02-2656-437d-ac70-cc43ceabf136" name="Under Your Spell">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7e4b37e8-1ae8-4a0d-b9bf-9b898c992cc1" name="You Haven't Even Begun">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="2d12ab0c-7dbc-4981-a173-98e9c6b1642e" name="Blood Cry">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a57f11d5-c6b9-4a63-b561-1f26b5cf6266" name="Penetrating Wound">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Strength" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="d6268d85-30c9-480b-97cf-97fc6d6304d9" name="Sineya">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="da95c0a1-b88b-4a32-bc6e-9e49f9aba9d5" name="Spirit Guide">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Slayer" />
-		<property name="card_class" value="Instinct" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="3c686c1c-e67f-4717-ad50-7c588e572a4f" name="Bored Now">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="7093a601-1303-479e-bd18-4bd5f48790c2" name="I Owe You Pain">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
-        <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
-        <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="a4685744-f249-4e13-9e33-38ee007f0709" name="My Will Be Done">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="2" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="d85da560-a86f-4ab7-8fa1-fa760674aa3e" name="Clem">
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="1" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="82923315-b972-46b7-a0fa-44d46636fcfb" name="Dawn">
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="1" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ad3ccf60-bdb9-4b58-935c-b0812805b2e0" name="Herbert the Pig">
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="1" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="66ad4f25-144f-4e86-9007-f6d90cbd9d96" name="Joyce Summers">
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="1" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c01d8606-8672-4d3e-8f17-89b4308362af" name="Lily">
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="1" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="e0956b81-aaf6-4a7e-9dbd-789c7745fced" name="Potential Slayer">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="3" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ebfb77d8-0fc4-4cf4-a346-df119d73e430" name="Wound">
+        <property name="card_type" value ="Wound" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="0" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="9e8476be-2e3e-4c61-a2a5-bec94c7a3926" name="Convert to Evil">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="b35460b5-9276-4512-bc4f-b952fc0070b8" name="Darkness Falls">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4f33eb54-c18a-48a8-b3d6-da99e839db95" name="Epic Struggle">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="0c91442d-58a8-4378-a2e9-e1e7f7b959dd" name="Hellmouth Opening">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="f77f2fc5-f31a-40b1-9b74-c68ae32d6036" name="Road to Damnation">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="68b31421-5869-4692-94b5-ce7b6c14b87a" name="Summon the Uber Vamps">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ec50da45-3498-4488-8f08-58fe94a2caad" name="Twilight Terror">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="e9e40c36-2c98-48cd-9dbc-9bb4a009b699" name="Vile Agenda">
+        <property name="card_type" value ="Scheme" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="52be400a-0dbb-4926-b901-aa40c05edeb0" name="Scheme Twist">
+        <property name="card_type" value ="Scheme Twist" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="710bfa6b-72b2-4d2c-a885-5c4ee17f4d70" name="Master Strike">
+        <property name="card_type" value ="Master Strike" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="861dad21-004f-4d2b-9951-3dd5785db30d" name="Angelus">
+        <property name="card_type" value ="Big Bad" />
+        <property name="card_group" value="Angelus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7b306aac-aed1-4722-8755-06b69e716c15" name="Clean of Humanity">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Angelus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="27af0477-be4d-4109-abea-de947ab46521" name="Sense of Whimsy">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Angelus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="881cd00c-835f-454a-8f8d-46aef19095fb" name="The Demon With the Angels Face">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Angelus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="91779667-ba49-49d9-bfca-f6eb33ee51fc" name="The Scourge of Europe">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Angelus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ad5a977a-38bf-478f-be23-b5521f69b51c" name="Drusilla">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Scourge of Europe" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="1de36a43-3353-40d1-afcb-974c2697e519" name="Norman Pfister">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Scourge of Europe" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7622b188-676b-431b-b212-8770d8be3603" name="Spike">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Scourge of Europe" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="d9f07dae-5405-4829-9447-8de7a6561b96" name="Octarus">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Scourge of Europe" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="8b702ea8-2fa9-48e7-96ca-7e1c91e24844" name="Patrice">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Scourge of Europe" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="aec3b65f-45ad-444d-b804-0411f26d9133" name="The Judge">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Scourge of Europe" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="e8477fb9-c654-45ec-9ab1-859406e73108" name="Glorificus">
+        <property name="card_type" value ="Big Bad" />
+        <property name="card_group" value="Glorificus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a05156ce-89ac-44b1-9904-82e2df5c8460" name="Search for the Key">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Glorificus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="e15b8bb5-9709-4a68-8eaa-a7bcae1de3be" name="Hell God">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Glorificus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="f2813884-3c8f-43a0-be85-399d4a323e9c" name="The Big Day">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Glorificus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="41809e3d-c002-4c29-a504-9c799fe19320" name="That Which Cannot Be Named">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="Glorificus" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="1ab4df3c-9276-45d9-ae7d-054cd4aa27fc" name="Ben Wilkinson">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Glorys Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ff928218-b825-40a2-8f4d-6be65429059f" name="Doc">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Glorys Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="da23348c-bfce-47ba-8084-05382d6e4165" name="Jinx">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Glorys Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="aac7675b-a08a-4e8d-ade6-5d467c144571" name="Queller Demon">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Glorys Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="821e5de1-29c4-4d1d-805e-b5bad334f04e" name="The High Priest">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Glorys Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="b209facb-288a-4cf3-9d58-934c386dc39e" name="The First">
+        <property name="card_type" value ="Big Bad" />
+        <property name="card_group" value="The First" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="39d44448-761c-4461-b835-df97e10132da" name="Beyond Death">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The First" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="f8a52aaa-1ebf-4ae9-8849-8497c8bcea68" name="Beyond Sin">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The First" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="72d6d03b-39ad-4776-82b3-4e4bc2adfa1c" name="From Beneath You">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The First" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="9b656d9c-72be-4045-accc-7093a7116947" name="It Devours">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The First" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c4694629-5f87-4cfb-9976-45c22fd71877" name="Caleb">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Firsts Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="941f6880-57b3-4e0d-814a-6feb84e55c9d" name="Charlotte">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Firsts Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="8e957874-cf9c-476c-9ba8-23da1c764f5f" name="Gnarl">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Firsts Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="46630c81-0ccc-46b1-88e5-a95d887f062b" name="The Firsts Avatars">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Firsts Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a4d4f87b-8fde-4424-a0eb-4b2836f542b5" name="The Master">
+        <property name="card_type" value ="Big Bad" />
+        <property name="card_group" value="The Master" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="1e646aa7-09ad-4f86-9b89-9a101c5e802b" name="Fruit Punch Mouth">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Master" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4e6279c4-0d13-424f-9374-072ee98d8339" name="King of Vampires">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Master" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="91a5400f-cc59-4f4a-82a9-0cfb7183eff9" name="Pergamum Codex">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Master" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="b0afa24c-ddf3-4dd2-9300-c17095f3e7ce" name="The Harvest">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Master" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c8f8228d-9ee9-47b3-8d9a-874e41695db0" name="Annointed One">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Order of Aurelius" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="564389e4-894a-4b29-8c49-cb0fea3ba102" name="Darla">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Order of Aurelius" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ae236fa8-0fdc-49de-a6bd-23b8d97e171e" name="Luke">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Order of Aurelius" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="f00c5cb6-40f3-41f3-b526-7465c67becdb" name="The Three">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Order of Aurelius" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="38ba9fa3-da92-4f01-b39c-e064a926dd0b" name="The Mayor">
+        <property name="card_type" value ="Big Bad" />
+        <property name="card_group" value="The Mayor" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a0fde656-ec0d-4ff2-9a11-de431351c768" name="Mayor Meat Extra Crispy">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Mayor" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="6ae88dc5-d320-42ad-83bb-d0e55d204888" name="Olvikan">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Mayor" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4bfa4be4-e69a-4541-bf40-80f05433f919" name="The Ascension">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Mayor" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="932694a8-b681-4a2a-b557-ca767558571d" name="The Dedication">
+        <property name="card_type" value ="Tactics" />
+        <property name="card_group" value="The Mayor" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="30763cd4-cee2-447e-b2ae-ff027c087163" name="Balthazar">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Mayors Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c326fcfd-b111-4902-ab53-715ef03d6b61" name="Faith">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Mayors Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="b574b286-1070-4d46-8cbf-5a3c7bb2263f" name="Kakistos">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Mayors Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="d9a3c7d7-9542-458b-b44e-d7c2c5d2236c" name="Mr Trick">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="The Mayors Minions" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="fa573ee1-4a2e-4894-a4f4-6cde126c4860" name="Cyrus">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Harmonys Gang" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="40e49812-2a19-429f-8301-6ebecbfe7e80" name="Harmony Kendall">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Harmonys Gang" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="dc9e883d-d3e9-4582-a10f-fe284ee4776f" name="Mort">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Harmonys Gang" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="0fa29608-60a5-4924-b0d8-259b50be7d99" name="Peaches">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Harmonys Gang" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a35eb1e5-0c99-45e5-8e6a-d1fcdfc3ed1e" name="Gachnar">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Demons" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="1aab2fc5-15c8-4b54-854d-3faea21e2b2b" name="Halfrek">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Demons" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="18a26b2e-8007-4a73-934d-4546c17c4416" name="Sweet">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Demons" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="72cc92e6-e7a5-4165-99f2-6c7cb0a0a797" name="The Gentlemen">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Demons" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="b6abda46-41ad-4633-a618-010ccd18a716" name="Harbingers of Death">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Henchmen" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="77cb5fa5-a102-4af6-8f01-07bb81858e10" name="Hellhounds">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Henchmen" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a7a8e987-fa20-482c-86e1-de2ff73bcfcd" name="Shark Gangsters">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Henchmen" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="0070afb4-86a4-442c-bbcd-92306fb1c3d7" name="Turok-Han Vampires">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Henchmen" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="cd36181f-4bb9-4072-88d7-a73becdb7d8a" name="Vampire Initiate">
+        <property name="card_type" value ="Villain" />
+        <property name="card_group" value="Henchmen" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="97089ad2-a862-46e9-b557-1d067c6e3fb7" name="Initiative Soldier">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Initiative" />
+        <property name="card_class" value="Basic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4d3f1055-706a-4d13-b799-9b835ba2df17" name="Watcher">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Watchers" />
+        <property name="card_class" value="Basic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="e57523a4-5f3c-43c9-8b59-00eb6b2bfa76" name="Ol' Broody Pants">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="035d0f83-96f8-4853-86ba-b5200109b72e" name="Tai Chi Focus">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="47892dbd-59b0-4e67-b6d9-559b03608c89" name="Dead Boy">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="d3f13cac-b208-4362-9a96-1ef98c15fc1b" name="Champion of the Powers">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="60d0f702-ed6a-49ad-8a03-e475da93ec51" name="Must Be Bunnies">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7991f0eb-d31f-41d1-a0a4-51e0acca6c84" name="Newly Human Strangely Literal">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4c5f2726-f812-4270-b2d5-b7a4962ab9c9" name="Is the Money Okay?">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="2f2557b0-18ef-4a81-830b-adea2b0f7778" name="Anyanka - Back in the Vengeance Business">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Strength" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ec4aac09-5d94-4793-85f3-ac388dba5f2c" name="Descendant of a Toaster Oven">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="6c19bed6-5f4d-45de-8cbc-8d0249a3f28e" name="Robo-Buffy">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="834b689a-d48c-4e4e-a703-e9c7766f6f6b" name="Sinister Attraction">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Strength" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a72633ea-c362-43a8-bb32-ab8c68b51f5d" name="Time to Slay">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="9d8c2ceb-b9a1-4df4-b237-c3a6c3cab57d" name="Death is Your Gift">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="35007b0c-fba2-46a4-a7c3-d44b90f946dc" name="Hurricane Buffy">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c5369714-de54-4185-b4e4-e9a47dbb46c6" name="Prophecy Girl">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ca2c8a26-26c3-4502-b33b-69dc803bc73f" name="Slaymaster General">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7076b11b-be2e-40eb-9d08-8908302aa83a" name="Reluctant Ally">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="da5912b9-a878-41cb-a711-0b45c2483b36" name="Lack of Tact">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ad944d0d-35d6-49ba-ac3d-5c52cf0b1247" name="Lone Fashionable Wolf">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4df1c483-366c-4835-be70-bf2a04138b16" name="Queen C">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="5d9975b8-33d9-414b-9ea7-cecf89315adf" name="Firecracker">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="6cd1accc-112e-4ef4-818e-3ec57761f23a" name="Five by Five">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7d0b17b3-6b72-477a-ad51-87cb07eb6d66" name="Hard Fought Redemption">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="5076c8f4-9e5f-4970-ad8f-18c1208d5584" name="Want. Take. Have.">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="eb049786-3bd5-43ee-9b8c-c3e02a878031" name="Circle of Kayless">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="d429393e-0fbc-4ba7-a3a6-223a3c94f942" name="Janna of the Kalderdash">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="3613507b-b343-4efe-a8ee-af6da53f5406" name="Scholastic Ally">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c0344725-38d4-4391-b814-3c15d2b50360" name="Technopagan">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="381fb741-76b7-44a3-a69b-e4a6fbe43a7d" name="Lycanthropic Endowment">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="19868223-9a94-492e-96d9-138938072b8c" name="Residual Werewolf Thing">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />        
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ca7c3418-ddc3-426e-8143-6159759b36ed" name="Trademark Stoicism">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="97e2cb24-2e2c-430a-974e-d7a5b3d214bf" name="We Survived">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="76d027bd-583a-4a4a-94fd-a89ef0c27c45" name="Black Ops">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Initiative" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="25058df7-f436-4f67-a1ed-ccc78cea059e" name="Captain Cardboard">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Initiative" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7619b112-8f6a-4adf-b3bb-8b97bec092a1" name="Regimental Soldier">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Initiative" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a40a6cc3-df54-4b2c-adc2-5c55689e51c2" name="Taser Blaster">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Initiative" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="8940f0d0-952e-42e4-a6b6-834251ad147a" name="Binding Field">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Watchers" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="4336d6fd-765d-4009-9dd7-3f6b8941f055" name="Like a Stevedore">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Watchers" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="b29eb7c7-30a7-415d-b5ce-bd873d2ace14" name="Research Guy">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Watchers" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="89a295ec-bd9b-44d0-a608-ca581728d6cb" name="Sophus">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Watchers" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="36fd3f4a-c453-454b-af08-f9c06875981e" name="Ally for Hire">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7d85b92e-337a-4bf0-b6fc-da76a459e82a" name="Hostile 17">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="64754501-5e4a-4200-bc46-19d0f0284063" name="Randy Giles">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="62437e6d-3c8c-4dd5-8f37-0311c80d8595" name="Trademark Black Leather Jacket">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Supernatural" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="2d355e5e-bd1f-4ba7-bf5b-9d15937eb7d8" name="Dolls Eye Crystal">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="c3690490-fd25-4a45-998e-cb590398c4db" name="Insect Reflection">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="88d53c02-2656-437d-ac70-cc43ceabf136" name="Under Your Spell">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7e4b37e8-1ae8-4a0d-b9bf-9b898c992cc1" name="You Haven't Even Begun">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="2d12ab0c-7dbc-4981-a173-98e9c6b1642e" name="Blood Cry">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a57f11d5-c6b9-4a63-b561-1f26b5cf6266" name="Penetrating Wound">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Strength" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="d6268d85-30c9-480b-97cf-97fc6d6304d9" name="Sineya">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="da95c0a1-b88b-4a32-bc6e-9e49f9aba9d5" name="Spirit Guide">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Slayer" />
+        <property name="card_class" value="Instinct" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="3c686c1c-e67f-4717-ad50-7c588e572a4f" name="Bored Now">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="7093a601-1303-479e-bd18-4bd5f48790c2" name="I Owe You Pain">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="Scooby" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
+        <property name="recruit_bonus" value="" />
+        <property name="fight_value" value="" />
+        <property name="fight_bonus" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="a4685744-f249-4e13-9e33-38ee007f0709" name="My Will Be Done">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
         <property name="card_team" value = "Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="fd8bc20d-e27d-481f-9b1d-a608ca05d732" name="Slayer Activation Spell">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="fd8bc20d-e27d-481f-9b1d-a608ca05d732" name="Slayer Activation Spell">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
         <property name="card_team" value = "Scooby" />
-		<property name="card_class" value="Magic" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="card_class" value="Magic" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="f8f78115-7275-42c0-9a00-1d65802656ed" name="Donut Run">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="f8f78115-7275-42c0-9a00-1d65802656ed" name="Donut Run">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
         <property name="card_team" value = "Scooby" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="bb3e1a4e-d063-4366-9305-7004941f8791" name="Glorified Bricklayer">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="bb3e1a4e-d063-4366-9305-7004941f8791" name="Glorified Bricklayer">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
         <property name="card_team" value = "Scooby" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="f4c99608-4703-44da-a9cb-70ce8928f9ed" name="Latent Soldier Know-how">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="f4c99608-4703-44da-a9cb-70ce8928f9ed" name="Latent Soldier Know-how">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
         <property name="card_team" value = "Scooby" />
-		<property name="card_class" value="Knowledge" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="card_class" value="Knowledge" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="ba16d700-34c7-4f11-b027-0db3940c8907" name="Librum Incindere">
-		<property name="card_type" value ="Hero" />
-		<property name="card_group" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="ba16d700-34c7-4f11-b027-0db3940c8907" name="Librum Incindere">
+        <property name="card_type" value ="Hero" />
+        <property name="card_group" value="" />
         <property name="card_team" value = "Scooby" />
-		<property name="card_class" value="Covert" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="card_class" value="Covert" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
-	<card id="e2297eb7-0361-401c-90a0-1e38369fc5c2" name="Dingoes Ate My Baby">
-		<property name="card_type" value ="Bystander" />
-		<property name="card_group" value="" />
-		<property name="card_team" value="" />
-		<property name="card_class" value="" />
-		<property name="cost" value="" />
-		<property name="recruit_value" value="" />
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
+    <card id="e2297eb7-0361-401c-90a0-1e38369fc5c2" name="Dingoes Ate My Baby">
+        <property name="card_type" value ="Bystander" />
+        <property name="card_group" value="" />
+        <property name="card_team" value="" />
+        <property name="card_class" value="" />
+        <property name="cost" value="" />
+        <property name="recruit_value" value="" />
         <property name="recruit_bonus" value="" />
-		<property name="fight_value" value="" />
+        <property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
-		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
-	</card>
+        <property name="victory_points" value="" />
+        <property name="card_text" value="" />
+    </card>
   </cards>
-</set>	
+</set>    
