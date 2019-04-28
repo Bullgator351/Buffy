@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Core Set" id="d050d38f-2fba-49a9-9c69-8c7c57da241e" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.3.12" version="0.0.1.1">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Core Set" id="d050d38f-2fba-49a9-9c69-8c7c57da241e" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.3.12" version="0.0.1.3">
   <cards>
     <card id="3f874a18-4b9d-47f8-8432-2d4fe2eeb066" name="Billy Ford Fordham">
 		<property name="card_type" value ="Bystander" />
@@ -21,7 +21,9 @@
 		<property name="card_class" value="" />
 		<property name="cost" value="" />
 		<property name="recruit_value" value="" />
+		<property name="recruit_bonus" value="" />
 		<property name="fight_value" value="" />
+		<property name="fight_bonus" value="" />
 		<property name="victory_points" value="1" />
 		<property name="card_text"	 value="" />
 	</card>
@@ -140,7 +142,7 @@
 		<property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
 		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
+		<property name="card_text" value="" />
 	</card>
 	<card id="0c91442d-58a8-4378-a2e9-e1e7f7b959dd" name="Hellmouth Opening">
 		<property name="card_type" value ="Scheme" />
@@ -153,7 +155,7 @@
 		<property name="fight_value" value="" />
         <property name="fight_bonus" value="" />
 		<property name="victory_points" value="" />
-		<property name="card_text"	 value="" />
+		<property name="card_text" value="" />
 	</card>
 	<card id="f77f2fc5-f31a-40b1-9b74-c68ae32d6036" name="Road to Damnation">
 		<property name="card_type" value ="Scheme" />
