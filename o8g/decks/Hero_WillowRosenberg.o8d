@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="5" id="fd8bc20d-e27d-481f-9b1d-a608ca05d732">Slayer Activation Spell</card>
+    <card qty="3" id="a4685744-f249-4e13-9e33-38ee007f0709">My Will Be Done</card>
+    <card qty="5" id="7093a601-1303-479e-bd18-4bd5f48790c2">I Owe You Pain</card>
+    <card qty="1" id="3c686c1c-e67f-4717-ad50-7c588e572a4f">Bored Now</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

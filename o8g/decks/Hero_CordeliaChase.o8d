@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="1" id="ad944d0d-35d6-49ba-ac3d-5c52cf0b1247">Lone Fashionable Wolf</card>
+    <card qty="3" id="7076b11b-be2e-40eb-9d08-8908302aa83a">Reluctant Ally</card>
+    <card qty="5" id="4df1c483-366c-4835-be70-bf2a04138b16">Queen C</card>
+    <card qty="5" id="da5912b9-a878-41cb-a711-0b45c2483b36">Lack of Tact</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

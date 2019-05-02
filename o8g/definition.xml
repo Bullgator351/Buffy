@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.3.16"
+        version="1.0.3.21"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -12,7 +12,7 @@
         gameurl="https://github.com/Bullgator351/Buffy"
 		setsurl="https://www.dropbox.com/s/r9c2ujd87s881t9/Buffy.o8c?dl=0"
         authors="Bullgator"
-        iconurl="https://imgur.com/NysMFtm"
+        iconurl="https://i.imgur.com/NysMFtm.jpg"
 		usetwosidedtable="False" >
 	<scripts>
 		<script src="scripts/actions.py" />
@@ -35,7 +35,7 @@
 	<table name="Table" visibility="undefined" width="1920" height="1080" background="table/sorrel-pear.png" backgroundStyle="uniform" >
 		<groupaction menu="Coin Flip" default="False" execute="flipCoin" />
 		<groupaction menu="Random Number" default="False" execute="randomNumber" />
-		<cardaction menu="Flip Card" default="False" shortcut="ctrl+F" execute="flipcard" />
+		<cardaction menu="Flip Card" default="False" shortcut="ctrl+F" execute="flip" />
 	</table>
     <player summary="Courage Tokens:">
 		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
@@ -44,7 +44,7 @@
         <group name="Player Deck" visibility="none" icon="groups/deck.png" >
 			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
 		</group>
-        <group name="Discard Pile" visibility="none" icon="groups/discardpile.png" />
+        <group name="Discard Pile" visibility="all" icon="groups/discardpile.png" />
     </player>
 	<shared summary="Dark_Light:">
 		<group name="BigBad_Pile" visibility="all" icon="groups/default.png" />

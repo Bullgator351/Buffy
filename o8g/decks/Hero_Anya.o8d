@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="1" id="2f2557b0-18ef-4a81-830b-adea2b0f7778">Anyanka - Back in the Vengeance Business</card>
+    <card qty="3" id="4c5f2726-f812-4270-b2d5-b7a4962ab9c9">Is the Money Okay?</card>
+    <card qty="5" id="7991f0eb-d31f-41d1-a0a4-51e0acca6c84">Newly Human Strangely Literal</card>
+    <card qty="5" id="60d0f702-ed6a-49ad-8a03-e475da93ec51">Must Be Bunnies</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

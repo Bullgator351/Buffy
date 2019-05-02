@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True">
+    <card qty="2" id="46630c81-0ccc-46b1-88e5-a95d887f062b">The Firsts Avatars</card>
+    <card qty="2" id="8e957874-cf9c-476c-9ba8-23da1c764f5f">Gnarl</card>
+    <card qty="2" id="941f6880-57b3-4e0d-814a-6feb84e55c9d">Charlotte</card>
+    <card qty="2" id="c4694629-5f87-4cfb-9976-45c22fd71877">Caleb</card>
+  </section>
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True" />
+  <notes><![CDATA[]]></notes>
+</deck>

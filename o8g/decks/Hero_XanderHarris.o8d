@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="5" id="ba16d700-34c7-4f11-b027-0db3940c8907">Librum Incindere</card>
+    <card qty="1" id="f4c99608-4703-44da-a9cb-70ce8928f9ed">Latent Soldier Know-how</card>
+    <card qty="3" id="bb3e1a4e-d063-4366-9305-7004941f8791">Glorified Bricklayer</card>
+    <card qty="5" id="f8f78115-7275-42c0-9a00-1d65802656ed">Donut Run</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

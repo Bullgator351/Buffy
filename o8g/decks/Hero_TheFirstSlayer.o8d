@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="5" id="da95c0a1-b88b-4a32-bc6e-9e49f9aba9d5">Spirit Guide</card>
+    <card qty="3" id="d6268d85-30c9-480b-97cf-97fc6d6304d9">Sineya</card>
+    <card qty="1" id="a57f11d5-c6b9-4a63-b561-1f26b5cf6266">Penetrating Wound</card>
+    <card qty="5" id="2d12ab0c-7dbc-4981-a173-98e9c6b1642e">Blood Cry</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="5" id="c0344725-38d4-4391-b814-3c15d2b50360">Technopagan</card>
+    <card qty="5" id="3613507b-b343-4efe-a8ee-af6da53f5406">Scholastic Ally</card>
+    <card qty="3" id="eb049786-3bd5-43ee-9b8c-c3e02a878031">Circle of Kayless</card>
+    <card qty="1" id="d429393e-0fbc-4ba7-a3a6-223a3c94f942">Janna of the Kalderdash</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

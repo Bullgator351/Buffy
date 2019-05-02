@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True" />
+  <section name="Big Bad Tactics" shared="True" />
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True" />
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True">
+    <card qty="3" id="ca7c3418-ddc3-426e-8143-6159759b36ed">Trademark Stoicism</card>
+    <card qty="5" id="97e2cb24-2e2c-430a-974e-d7a5b3d214bf">We Survived</card>
+    <card qty="5" id="19868223-9a94-492e-96d9-138938072b8c">Residual Werewolf Thing</card>
+    <card qty="1" id="381fb741-76b7-44a3-a69b-e4a6fbe43a7d">Lycanthropic Endowment</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

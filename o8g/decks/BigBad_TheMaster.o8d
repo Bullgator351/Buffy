@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False" />
+  <section name="Big Bads" shared="True">
+    <card qty="1" id="a4d4f87b-8fde-4424-a0eb-4b2836f542b5">The Master</card>
+  </section>
+  <section name="Big Bad Tactics" shared="True">
+    <card qty="1" id="4e6279c4-0d13-424f-9374-072ee98d8339">King of Vampires</card>
+    <card qty="1" id="b0afa24c-ddf3-4dd2-9300-c17095f3e7ce">The Harvest</card>
+    <card qty="1" id="91a5400f-cc59-4f4a-82a9-0cfb7183eff9">Pergamum Codex</card>
+    <card qty="1" id="1e646aa7-09ad-4f86-9b89-9a101c5e802b">Fruit Punch Mouth</card>
+  </section>
+  <section name="Schemes" shared="True" />
+  <section name="Master Strikes" shared="True" />
+  <section name="Scheme Twists" shared="True" />
+  <section name="Villains" shared="True">
+    <card qty="2" id="ae236fa8-0fdc-49de-a6bd-23b8d97e171e">Luke</card>
+    <card qty="3" id="f00c5cb6-40f3-41f3-b526-7465c67becdb">The Three</card>
+    <card qty="2" id="564389e4-894a-4b29-8c49-cb0fea3ba102">Darla</card>
+    <card qty="1" id="c8f8228d-9ee9-47b3-8d9a-874e41695db0">Annointed One</card>
+  </section>
+  <section name="Henchmen" shared="True" />
+  <section name="Bystanders" shared="True" />
+  <section name="Wounds" shared="True" />
+  <section name="Potential Slayers" shared="True" />
+  <section name="Heroes" shared="True" />
+  <notes><![CDATA[]]></notes>
+</deck>
