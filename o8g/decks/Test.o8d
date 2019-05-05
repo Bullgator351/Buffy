@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="ff58fb42-fe9d-499e-afdb-ecdcf1939c99">
+  <section name="Grey" shared="False">
+    <card qty="4" id="97089ad2-a862-46e9-b557-1d067c6e3fb7">Initiative Soldier</card>
+    <card qty="8" id="4d3f1055-706a-4d13-b799-9b835ba2df17">Watcher</card>
+    <card qty="1" id="4df1c483-366c-4835-be70-bf2a04138b16">Queen C</card>
+  </section>
+  <section name="Big Bads" shared="True">
+    <card qty="1" id="e8477fb9-c654-45ec-9ab1-859406e73108">Glorificus</card>
+  </section>
+  <section name="Big Bad Tactics" shared="True">
+    <card qty="1" id="a05156ce-89ac-44b1-9904-82e2df5c8460">Search for the Key</card>
+    <card qty="1" id="f2813884-3c8f-43a0-be85-399d4a323e9c">The Big Day</card>
+    <card qty="1" id="41809e3d-c002-4c29-a504-9c799fe19320">That Which Cannot Be Named</card>
+    <card qty="1" id="e15b8bb5-9709-4a68-8eaa-a7bcae1de3be">Hell God</card>
+  </section>
+  <section name="Schemes" shared="True">
+    <card qty="1" id="4f33eb54-c18a-48a8-b3d6-da99e839db95">Epic Struggle</card>
+    <card qty="1" id="68b31421-5869-4692-94b5-ce7b6c14b87a">Summon the Uber Vamps</card>
+    <card qty="1" id="e9e40c36-2c98-48cd-9dbc-9bb4a009b699">Vile Agenda</card>
+    <card qty="1" id="ec50da45-3498-4488-8f08-58fe94a2caad">Twilight Terror</card>
+    <card qty="1" id="f77f2fc5-f31a-40b1-9b74-c68ae32d6036">Road to Damnation</card>
+    <card qty="1" id="0c91442d-58a8-4378-a2e9-e1e7f7b959dd">Hellmouth Opening</card>
+    <card qty="1" id="b35460b5-9276-4512-bc4f-b952fc0070b8">Darkness Falls</card>
+    <card qty="1" id="9e8476be-2e3e-4c61-a2a5-bec94c7a3926">Convert to Evil</card>
+  </section>
+  <section name="Master Strikes" shared="True">
+    <card qty="5" id="710bfa6b-72b2-4d2c-a885-5c4ee17f4d70">Master Strike</card>
+  </section>
+  <section name="Scheme Twists" shared="True">
+    <card qty="8" id="52be400a-0dbb-4926-b901-aa40c05edeb0">Scheme Twist</card>
+  </section>
+  <section name="Villains" shared="True">
+    <card qty="1" id="821e5de1-29c4-4d1d-805e-b5bad334f04e">The High Priest</card>
+    <card qty="2" id="1ab4df3c-9276-45d9-ae7d-054cd4aa27fc">Ben Wilkinson</card>
+    <card qty="2" id="72cc92e6-e7a5-4165-99f2-6c7cb0a0a797">The Gentlemen</card>
+    <card qty="2" id="1aab2fc5-15c8-4b54-854d-3faea21e2b2b">Halfrek</card>
+    <card qty="2" id="18a26b2e-8007-4a73-934d-4546c17c4416">Sweet</card>
+    <card qty="2" id="a35eb1e5-0c99-45e5-8e6a-d1fcdfc3ed1e">Gachnar</card>
+    <card qty="2" id="aac7675b-a08a-4e8d-ade6-5d467c144571">Queller Demon</card>
+    <card qty="2" id="da23348c-bfce-47ba-8084-05382d6e4165">Jinx</card>
+    <card qty="1" id="ff928218-b825-40a2-8f4d-6be65429059f">Doc</card>
+  </section>
+  <section name="Henchmen" shared="True">
+    <card qty="10" id="a7a8e987-fa20-482c-86e1-de2ff73bcfcd">Shark Gangsters</card>
+  </section>
+  <section name="Bystanders" shared="True">
+    <card qty="5" id="ad3ccf60-bdb9-4b58-935c-b0812805b2e0">Herbert the Pig</card>
+    <card qty="5" id="66ad4f25-144f-4e86-9007-f6d90cbd9d96">Joyce Summers</card>
+    <card qty="5" id="c01d8606-8672-4d3e-8f17-89b4308362af">Lily</card>
+    <card qty="1" id="e2297eb7-0361-401c-90a0-1e38369fc5c2">Dingoes Ate My Baby</card>
+    <card qty="5" id="d85da560-a86f-4ab7-8fa1-fa760674aa3e">Clem</card>
+    <card qty="5" id="82923315-b972-46b7-a0fa-44d46636fcfb">Dawn</card>
+    <card qty="5" id="3f874a18-4b9d-47f8-8432-2d4fe2eeb066">Billy Ford Fordham</card>
+  </section>
+  <section name="Wounds" shared="True">
+    <card qty="15" id="ebfb77d8-0fc4-4cf4-a346-df119d73e430">Wound</card>
+  </section>
+  <section name="Potential Slayers" shared="True">
+    <card qty="15" id="e0956b81-aaf6-4a7e-9dbd-789c7745fced">Potential Slayer</card>
+  </section>
+  <section name="Heroes" shared="True">
+    <card qty="5" id="60d0f702-ed6a-49ad-8a03-e475da93ec51">Must Be Bunnies</card>
+    <card qty="5" id="7991f0eb-d31f-41d1-a0a4-51e0acca6c84">Newly Human Strangely Literal</card>
+    <card qty="3" id="4c5f2726-f812-4270-b2d5-b7a4962ab9c9">Is the Money Okay?</card>
+    <card qty="1" id="2f2557b0-18ef-4a81-830b-adea2b0f7778">Anyanka - Back in the Vengeance Business</card>
+    <card qty="5" id="c5369714-de54-4185-b4e4-e9a47dbb46c6">Prophecy Girl</card>
+    <card qty="5" id="35007b0c-fba2-46a4-a7c3-d44b90f946dc">Hurricane Buffy</card>
+    <card qty="3" id="9d8c2ceb-b9a1-4df4-b237-c3a6c3cab57d">Death is Your Gift</card>
+    <card qty="1" id="ca2c8a26-26c3-4502-b33b-69dc803bc73f">Slaymaster General</card>
+    <card qty="5" id="19868223-9a94-492e-96d9-138938072b8c">Residual Werewolf Thing</card>
+    <card qty="5" id="97e2cb24-2e2c-430a-974e-d7a5b3d214bf">We Survived</card>
+    <card qty="3" id="ca7c3418-ddc3-426e-8143-6159759b36ed">Trademark Stoicism</card>
+    <card qty="1" id="381fb741-76b7-44a3-a69b-e4a6fbe43a7d">Lycanthropic Endowment</card>
+    <card qty="5" id="f8f78115-7275-42c0-9a00-1d65802656ed">Donut Run</card>
+    <card qty="5" id="ba16d700-34c7-4f11-b027-0db3940c8907">Librum Incindere</card>
+    <card qty="3" id="bb3e1a4e-d063-4366-9305-7004941f8791">Glorified Bricklayer</card>
+    <card qty="1" id="f4c99608-4703-44da-a9cb-70ce8928f9ed">Latent Soldier Know-how</card>
+    <card qty="1" id="ad944d0d-35d6-49ba-ac3d-5c52cf0b1247">Lone Fashionable Wolf</card>
+    <card qty="5" id="4df1c483-366c-4835-be70-bf2a04138b16">Queen C</card>
+    <card qty="3" id="7076b11b-be2e-40eb-9d08-8908302aa83a">Reluctant Ally</card>
+    <card qty="5" id="da5912b9-a878-41cb-a711-0b45c2483b36">Lack of Tact</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>

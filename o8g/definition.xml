@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.3.21"
+        version="1.0.3.38"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -30,23 +30,38 @@
 		<property name="fight_bonus" type="String" textKind="Tokens" />
 		<property name="victory_points" type="String" textKind="Tokens" />
 		<property name="card_text" type="String" textKind="Tokens" />
+            <size name="DarkLightToken" front="cards/252af8c6-f383-46f9-ae8b-f2f302bdf6b0.png" back="cards/252af8c6-f383-46f9-ae8b-f2f302bdf6b0.png" width="60" height="60" />
+            <size name="CourageToken" front="cards/c5be15ab-f1a6-442c-aba1-c64ccc14961b.png" back="cards/c5be15ab-f1a6-442c-aba1-c64ccc14961b.png" width="40" height="40" />
     </card>
 	<gameboards src="background/playmat.png" width="1620" height="836" x="-810" y="-518" />
 	<table name="Table" visibility="undefined" width="1920" height="1080" background="table/sorrel-pear.png" backgroundStyle="uniform" >
-		<groupaction menu="Coin Flip" default="False" execute="flipCoin" />
+		<groupaction menu="Create Dark/Light Token" default="False" execute="createDarkLightToken" />
+        <groupaction menu="Create Courage Token" default="False" execute="createCourageToken" />
+        <groupaction menu="Coin Flip" default="False" execute="flipCoin" />
 		<groupaction menu="Random Number" default="False" execute="randomNumber" />
 		<cardaction menu="Flip Card" default="False" shortcut="ctrl+F" execute="flip" />
+        <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
+		<groupaction menu="Reveal Villain" default="False" shortcut="ctrl+V" execute="addVillain" />
+        <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+H" execute="addHero" />
 	</table>
-    <player summary="Courage Tokens:">
+	<player summary="Courage Tokens: {#Courage_Tokens} | Victory Points: {#Victory_Total}">
+		<counter name="Courage_Tokens" default="0" reset="False" icon="groups/default.png" />
+		<counter name="Victory_Total" default="0" reset="False" icon="groups/default.png" />
 		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
-			<groupaction menu="Random Discard" default="False" execute="randomDiscard" />
+			<cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
+            <groupaction menu="Random Discard" default="False" execute="randomDiscard" />
 		</hand>
         <group name="Player Deck" visibility="none" icon="groups/deck.png" >
 			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+            <groupaction menu="Draw" default="True" shortcut="ctrl+D" execute="draw" />
+			<groupaction menu="Draw Many" default="False" shortcut="ctrl+shift+D" execute="drawMany" />
 		</group>
-        <group name="Discard Pile" visibility="all" icon="groups/discardpile.png" />
+        <group name="Discard Pile" visibility="all" icon="groups/discardpile.png" >
+            <groupaction menu="Shuffle into Player Deck" default="False" execute="moveAllToPlayer" />
+        </group>
     </player>
-	<shared summary="Dark_Light:">
+	<shared summary="Dark_Light: {#Dark_Light}">
+        <counter name="Dark_Light" default="0" reset="False" icon="groups/default.png"/>
 		<group name="BigBad_Pile" visibility="all" icon="groups/default.png" />
 		<group name="Scheme_Pile" visibility="all" icon="groups/default.png" />
 		<group name="Twists_Pile" visibility="all" icon="groups/default.png" />

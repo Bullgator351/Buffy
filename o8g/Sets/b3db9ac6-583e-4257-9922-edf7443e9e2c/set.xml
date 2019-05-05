@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Tokens" id="b3db9ac6-583e-4257-9922-edf7443e9e2c" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.3.33" version="0.0.0.2">
+  <cards>
+    <card id="252af8c6-f383-46f9-ae8b-f2f302bdf6b0" name="Dark-Light Token" size="DarkLightToken" >
+    </card>
+    <card id="c5be15ab-f1a6-442c-aba1-c64ccc14961b" name="Courage Token" size="CourageToken" >
+    </card>
+  </cards>
+</set>    

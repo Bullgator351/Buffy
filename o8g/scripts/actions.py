@@ -14,7 +14,7 @@ CourageToken = ("CourageToken", "c5be15ab-f1a6-442c-aba1-c64ccc14961b")
 # Playmat stats
 BoardWidth = 1620
 BoardStartx = 0 - (BoardWidth / 2)
-# Width of Margin around edge of playmat
+# Width of Margin at the left end of the playmat
 BoardMarginHoriz = 26
 # Width of standard card
 CardWidth = 128
@@ -38,7 +38,7 @@ BoardStarty = -100 - (BoardHeight / 2)
 CardHeight = 180
 # Height of the box each pile goes in
 BoxHeight = 208
-# Height of margin around edge of playmat
+# Height of margin at the top of the playmat
 BoardMarginVert = 64
 # Height of the space between the boxes
 BoxSepHeight = 56
@@ -50,7 +50,7 @@ FirstRowy = BoardStarty + BoardMarginVert
 SecondRowy = FirstRowy + BoxHeight + BoxSepHeight
 ThirdRowy = SecondRowy + BoxHeight + BoxSepHeight
 # Sunnydale sizes
-Sunnydale0x = BoardStartx + 406
+Sunnydale0x = BoardStartx + BoardMarginHoriz + (2 * BoxWidth) + (2 * BoxSepWidth)
 Sunnydale0y = BoardStarty + 340
 SunnydaleHeight = 182
 SunnydaleWidth = 160
@@ -60,7 +60,7 @@ Sunnydale2x = Sunnydale1x + SunnydaleWidth
 Sunnydale3x = Sunnydale2x + SunnydaleWidth
 Sunnydale4x = Sunnydale3x + SunnydaleWidth
 # Library Sizes
-Library0x = BoardStartx + 406
+Library0x = BoardStartx + BoardMarginHoriz + (2 * BoxWidth) + (2 * BoxSepWidth)
 Library0y = BoardStarty + 612
 LibraryHeight = 200
 LibraryWidth = 160
@@ -99,7 +99,7 @@ showDebug = False #Can be changed to turn on debug - we don't care about the val
 def debug(str):
     if showDebug:
         whisper(str)
-        
+
 def toggleDebug(group, x=0, y=0):
     global showDebug
     showDebug = not showDebug
@@ -108,8 +108,6 @@ def toggleDebug(group, x=0, y=0):
     else:
         notify("{} turns off debug".format(me))
     
-#
-
 
 # Probably table card action but need to compare with flipcard
 
@@ -129,6 +127,9 @@ def flip(card, x = 0, y = 0):
 def createDarkLightToken(group, x=0, y=0):
      moveDarkLightToken(x, y)
 
+def moveDarkLightToken(x=0, y=0):
+    return moveCard("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y)
+    
 def moveCard(model, x, y):
     for c in table:
         if c.model == model:
@@ -136,21 +137,23 @@ def moveCard(model, x, y):
             return c
     return table.create(model, x, y)
     
-def moveDarkLightToken(x=0, y=0):
-    return moveCard("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y)
-    
 def getDarkLightToken():
     for c in table:
         if c.model == "252af8c6-f383-46f9-ae8b-f2f302bdf6b0":
             return c
     return None
 
+def createCourageToken(group, x=0, y=0):
+     moveCourageToken(x, y)
+
+def moveCourageToken(x=0, y=0):
+    return moveCard("c5be15ab-f1a6-442c-aba1-c64ccc14961b", x, y)
+
 def getCourageToken():
     for c in table:
         if c.model == "c5be15ab-f1a6-442c-aba1-c64ccc14961b":
             return c
     return None
-
 
 def flipCoin(group, x = 0, y = 0):
     mute()
@@ -165,7 +168,59 @@ def randomNumber(group, x=0, y=0):
     max = askInteger("Random number range (1 to ....)", 6)
     if max == None: return
     notify("{} randomly selects {} (1 to {})".format(me, rnd(1,max), max))
-    
+ 
+def villainDeck():
+    return shared.piles['Villain Deck'] 
+
+def addVillain(group=None, x=0, y=0):
+    nextVillain(villainDeck(), x, y, False)
+
+def nextVillain(group, x, y, facedown, who=me):
+    mute()
+
+    if group.controller != me:
+        remoteCall(group.controller, "nextVillain", [group, x, y, facedown, me])
+        return
+        
+    #if len(group) == 0:
+    #    resetVillainDeck(group)
+    if len(group) == 0: # No cards
+        return
+        
+    card = group.top()
+    if x == 0 and y == 0:  #Move to default position in the staging area
+        addToSunnydale(card, facedown, who)
+
+def addToSunnydale(card, facedown=False, who=me):
+    card.moveToTable(VillainDeckx, VillainDecky, facedown)            
+    notify("A new villain is chillin' in Sunnydale: '{}'.".format(card))
+
+def heroDeck():
+    return shared.piles['Hero Deck'] 
+
+def addHero(group=None, x=0, y=0):
+    nextHero(heroDeck(), x, y, False)
+        
+def nextHero(group, x, y, facedown, who=me):
+    mute()
+
+    if group.controller != me:
+        remoteCall(group.controller, "nextHero", [group, x, y, facedown, me])
+        return
+        
+    #if len(group) == 0:
+    #   resetHeroDeck(group)
+    if len(group) == 0: # No cards
+        return
+        
+    card = group.top()
+    if x == 0 and y == 0:  #Move to default position in the staging area
+        addToLibrary(card, facedown, who)        
+
+def addToLibrary(card, facedown=False, who=me):
+    card.moveToTable(HeroDeckx, HeroDecky, facedown)            
+    notify("A new Hero gonna appearo in the Library: '{}'.".format(card))
+
 
 #---------------------------------------------------------------------------
 # Table card actions
@@ -181,6 +236,25 @@ def flipcard(card, x = 0, y = 0):
 
     cardx, cardy = card.position
     
+def discard(card, x=0, y=0):
+    mute()
+    if card.controller != me:
+        whisper("{} does not control '{}' - discard cancelled".format(me, card))
+        return
+    
+    pile = card.controller.piles['Discard Pile']
+    who = pile.controller
+    notify("{} discards '{}'".format(me, card))
+    if who != me:
+        card.setController(who)        
+        remoteCall(who, "doDiscard", [me, card, pile])
+    else:
+        doDiscard(who, card, pile)
+        
+def doDiscard(player, card, pile):
+    card.moveTo(pile)
+
+
 # Need playersetup, addencounter or createcard, addresource, discard, something adapted to KO
 
     
@@ -194,7 +268,8 @@ def randomDiscard(group):
     if card is None: return
     notify("{} randomly discards '{}'.".format(me, card))
     card.moveTo(me.piles['Discard Pile'])
-    
+
+
 # Need discard and something adapted for KO
 
 #------------------------------------------------------------------------------
@@ -202,36 +277,48 @@ def randomDiscard(group):
 #------------------------------------------------------------------------------
 
 def draw(group, x = 0, y = 0):
-	mute()
-	if len(group) == 0: return
-	card = group[0]
-	card.moveTo(me.hand)
-	notify("{} draws '{}'".format(me, card))
-
-def shuffle(group):
-	mute()
-	if len(group) > 0:
-		update()
-		group.shuffle()
-		notify("{} shuffles {}".format(me, group.name))
+    mute()
+    if len(group) == 0: return
+    card = group[0]
+    card.moveTo(me.hand)
+    notify("{} draws '{}'".format(me, card))
 
 def drawMany(group, count = None):
-	mute()
-	if len(group) == 0: return
-	if deckLocked():
-		whisper("Your deck is locked, you cannot draw cards at this time")
-		return
-	if count is None:
-		count = askInteger("Draw how many cards?", 6)
-	if count is None or count <= 0:
-		whisper("drawMany: invalid card count")
-		return
-	for c in group.top(count):
-		c.moveTo(me.hand)
-		notify("{} draws '{}'".format(me, c))
+    mute()
+    if len(group) == 0: return
+    if count is None:
+        count = askInteger("Draw how many cards?", 6)
+    if count is None or count <= 0:
+        whisper("drawMany: invalid card count")
+        return
+    for c in group.top(count):
+        c.moveTo(me.hand)
+        notify("{} draws '{}'".format(me, c))
+
+def shuffle(group):
+    mute()
+    if len(group) > 0:
+        update()
+        group.shuffle()
+        notify("{} shuffles {}".format(me, group.name))
  
+def lookAtTop1Deck(group, x = 0, y = 0):
+    mute()
+    notify("{} looks at {}'s Deck.".format(me, me))
+    me.deck.lookAt(1,True)
 
+def lookAtTop3Deck(group, x = 0, y = 0):
+    mute()
+    notify("{} looks at {}'s Deck.".format(me, me))
+    me.deck.lookAt(3,True)
 
+def moveAllToPlayer(group):
+    mute()
+    if confirm("Shuffle all cards from {} to Player Deck?".format(group.name)):
+        for c in group:
+            c.moveTo(c.controller.piles['Player Deck'])
+        notify("{} moves all cards from {} to the Player Deck".format(me, group.name))
+        shuffle(me.piles['Player Deck'])
 
 
 
