@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.3.38"
+        version="1.0.4.4"
 		scriptVersion="3.1.0.2"
         markersize="16"	
         tags="Legendary Buffy"
@@ -43,16 +43,20 @@
         <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
 		<groupaction menu="Reveal Villain" default="False" shortcut="ctrl+V" execute="addVillain" />
         <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+H" execute="addHero" />
+        <groupaction menu="Reveal Potential" default="True" shortcut="ctrl+P" execute="addPotential" />
+        <groupaction menu="Reveal Bystander" default="True" shortcut="ctrl+B" execute="addBystander" />
+        <groupaction menu="Reveal Wound" default="True" shortcut="ctrl+W" execute="addWound" />
 	</table>
 	<player summary="Courage Tokens: {#Courage_Tokens} | Victory Points: {#Victory_Total}">
 		<counter name="Courage_Tokens" default="0" reset="False" icon="groups/default.png" />
 		<counter name="Victory_Total" default="0" reset="False" icon="groups/default.png" />
 		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
+            <cardaction menu="Play card" default="True" execute="playCard" />
 			<cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
             <groupaction menu="Random Discard" default="False" execute="randomDiscard" />
 		</hand>
         <group name="Player Deck" visibility="none" icon="groups/deck.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
             <groupaction menu="Draw" default="True" shortcut="ctrl+D" execute="draw" />
 			<groupaction menu="Draw Many" default="False" shortcut="ctrl+shift+D" execute="drawMany" />
 		</group>
@@ -68,16 +72,23 @@
 		<group name="Master_Strikes" visibility="all" icon="groups/default.png" />
 		<group name="Escaped_Villains" visibility="all" icon="groups/default.png" />
 		<group name="KO_Pile" visibility="all" icon="groups/default.png" />
-		<group name="Potential_Slayers" visibility="all" icon="groups/default.png" />
-		<group name="Wounds" visibility="all" icon="groups/default.png" />
-		<group name="Bystanders" visibility="none" icon="groups/default.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+		<group name="Potential_Slayers" visibility="all" icon="groups/default.png" >
+            <groupaction menu="Move to Potential Slayers Pile" default="True" shortcut="ctrl+P" execute="addPotential" />
+        </group>
+        <group name="Wounds" visibility="all" icon="groups/default.png" >
+            <groupaction menu="Move to Wounds Pile" default="True" shortcut="ctrl+W" execute="addWound" />
+		</group>
+        <group name="Bystanders" visibility="none" icon="groups/default.png" >
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
+            <groupaction menu="Move to Bystanders Pile" default="True" shortcut="ctrl+b" execute="addBystander" />
 		</group>
 		<group name="Villain Deck" visibility="none" icon="groups/default.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
 		</group>
 		<group name="Hero Deck" visibility="none" icon="groups/default.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+W" execute="shuffle" />
+			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
+            <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+H" execute="addHero" />
+            <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+V" execute="addVillain" />
 		</group>
 	</shared>
 	<deck>

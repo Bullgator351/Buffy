@@ -107,7 +107,14 @@ def toggleDebug(group, x=0, y=0):
         notify("{} turns on debug".format(me))
     else:
         notify("{} turns off debug".format(me))
-    
+
+# Move piles from group to table
+def createPiles(group):
+    if len(group) == 0: return
+    for c in group:
+        c.moveTo(group)
+    notify("{} moves all cards from {} to {}".format(me, discard.name, group.name))
+    shuffle(group)
 
 # Probably table card action but need to compare with flipcard
 
@@ -320,7 +327,104 @@ def moveAllToPlayer(group):
         notify("{} moves all cards from {} to the Player Deck".format(me, group.name))
         shuffle(me.piles['Player Deck'])
 
+# Move groups to correct piles on the table:
+        
+def potentialSlayers():
+    return shared.piles['Potential_Slayers']
+
+def addPotential(group=None, x=0, y=0):
+    nextPotential(potentialSlayers(), x, y, False)
+    
+def nextPotential(group, x, y, facedown, who=me):
+    mute()
+    
+    if group.controller != me:
+        remoteCall(group.controller, "nextPotential", [group, x, y, facedown, me])
+        return
+    #if len(group) == 0:
+    #   resetPotentialSlayers(group)
+    if len(group) == 0:
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToPotential(card, facedown, who)
+
+def addToPotential(card, facedown=False, who=me):
+    card.moveToTable(Potentialx, Potentialy, facedown)
+    
+def Wounds():
+    return shared.piles['Wounds']
+
+def addWound(group=None, x=0, y=0):
+    nextWound(Wounds(), x, y, False)
+    
+def nextWound(group, x, y, facedown, who=me):
+    mute()
+
+    if group.controller != me:
+        remoteCall(group.controller, "nextWound", [group, x, y, facedown, me])
+        return
+    #if len(group) == 0:
+    #   resetWounds(group)
+    if len(group) == 0:
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToWounds(card, facedown, who)
+
+def addToWounds(card, facedown=False, who=me):
+    card.moveToTable(Woundsx, Woundsy, facedown)
+
+def Bystanders():
+    return shared.piles['Bystanders']
+
+def addBystander(group=None, x=0, y=0):
+    nextBystander(Bystanders(), x, y, False)
+    
+def nextBystander(group, x, y, facedown, who=me):
+    mute()
+    
+    if group.controller != me:
+        remoteCall(group.controller, "nextBystander", [group, x, y, facedown, me])
+        return
+    #if len(group) == 0:
+    #   resetBystanders(group)
+    if len(group) == 0:
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToBystanders(card, facedown, who)
+
+def addToBystanders(card, facedown=True, who=me):
+    card.moveToTable(Bystandersx, Bystandersy, facedown)
+
+def addVillain(group=None, x=0, y=0):
+    nextVillain(villainDeck(), x, y, False)
+
+def nextVillain(group, x, y, facedown, who=me):
+    mute()
+
+    if group.controller != me:
+        remoteCall(group.controller, "nextVillain", [group, x, y, facedown, me])
+        return
+        
+    #if len(group) == 0:
+    #    resetVillainDeck(group)
+    if len(group) == 0: # No cards
+        return
+        
+    card = group.top()
+    if x == 0 and y == 0:  #Move to default position in the staging area
+        addToSunnydale(card, facedown, who)
+
+def addToSunnydale(card, facedown=False, who=me):
+    card.moveToTable(VillainDeckx, VillainDecky, facedown)            
+    notify("A new villain is chillin' in Sunnydale: '{}'.".format(card))
+
 
 
 # Need something to track victory conditions - ideally put the number in the global hand display
-# Also tract Dark/Light in hand display
+# Also track Dark/Light in hand display
