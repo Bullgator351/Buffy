@@ -1,3 +1,6 @@
+import time
+import re
+
 DarkLightToken = ("DarkLightToken", "252af8c6-f383-46f9-ae8b-f2f302bdf6b0")
 CourageToken = ("CourageToken", "c5be15ab-f1a6-442c-aba1-c64ccc14961b")
 # 
@@ -11,24 +14,24 @@ CourageToken = ("CourageToken", "c5be15ab-f1a6-442c-aba1-c64ccc14961b")
 # 
 # For now we'll set their values here:
 # I found it is less confusing to deal with all the x's then all the y's
-# Playmat stats
+# Playmat dimensions:
 BoardWidth = 1620
 BoardStartx = 0 - (BoardWidth / 2)
-# Width of Margin at the left end of the playmat
+# Width of Margin at the left end of the playmat:
 BoardMarginHoriz = 26
-# Width of standard card
+# Width of standard card:
 CardWidth = 128
-# Width of box each pile goes in
+# Width of box each pile goes in:
 BoxWidth = 150
-# Width of margin around cards inside each box
+# Width of margin around cards inside each box:
 BoxMarginHoriz = 11
-# Horiz distance between boxes
+# Horiz distance between boxes:
 BoxSepWidth = 40
-# X coordinates of each column
+# X coordinates to place a card in the proper box:
 FirstColumnx = BoardStartx + BoardMarginHoriz
 SecondColumnx = FirstColumnx + BoxWidth + BoxSepWidth
 ThirdColumnx = SecondColumnx + BoxWidth + BoxSepWidth
-FourthColumnx = BoardStartx + 1064
+FourthColumnx = BoardStartx + 1064 + BoxMarginHoriz
 FifthColumnx = FourthColumnx + BoxWidth + BoxSepWidth
 
 # Here are the y's
@@ -41,14 +44,15 @@ BoxHeight = 208
 # Height of margin at the top of the playmat
 BoardMarginVert = 64
 # Height of the space between the boxes
-BoxSepHeight = 56
+UpperBoxSepHeight = 56
+LowerBoxSepHeight = 64
 # Amount of space between each card edge and border of box
 BoxMarginVert = 14
 
 # Y coordinates of each row
 FirstRowy = BoardStarty + BoardMarginVert
-SecondRowy = FirstRowy + BoxHeight + BoxSepHeight
-ThirdRowy = SecondRowy + BoxHeight + BoxSepHeight
+SecondRowy = FirstRowy + BoxHeight + UpperBoxSepHeight
+ThirdRowy = SecondRowy + BoxHeight + LowerBoxSepHeight
 # Sunnydale sizes
 Sunnydale0x = BoardStartx + BoardMarginHoriz + (2 * BoxWidth) + (2 * BoxSepWidth)
 Sunnydale0y = BoardStarty + 340
@@ -93,28 +97,6 @@ VillainDecky = SecondRowy + BoxMarginVert
 HeroDeckx = FifthColumnx + BoxMarginHoriz
 HeroDecky = ThirdRowy + BoxMarginVert
 
-# Toggle global debug
-showDebug = False #Can be changed to turn on debug - we don't care about the value on game reconnect so it is safe to use a python global
-
-def debug(str):
-    if showDebug:
-        whisper(str)
-
-def toggleDebug(group, x=0, y=0):
-    global showDebug
-    showDebug = not showDebug
-    if showDebug:
-        notify("{} turns on debug".format(me))
-    else:
-        notify("{} turns off debug".format(me))
-
-# Move piles from group to table
-def createPiles(group):
-    if len(group) == 0: return
-    for c in group:
-        c.moveTo(group)
-    notify("{} moves all cards from {} to {}".format(me, discard.name, group.name))
-    shuffle(group)
 
 # Probably table card action but need to compare with flipcard
 
@@ -132,10 +114,10 @@ def flip(card, x = 0, y = 0):
 #---------------------------------------------------------------------------
 
 def createDarkLightToken(group, x=0, y=0):
-     moveDarkLightToken(x, y)
-
-def moveDarkLightToken(x=0, y=0):
-    return moveCard("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y)
+    mute()
+    x = BoardStartx + 1480
+    y = BoardStarty + 450
+    table.create("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y, quantity = 1, persist = False)
     
 def moveCard(model, x, y):
     for c in table:
@@ -143,24 +125,12 @@ def moveCard(model, x, y):
             c.moveToTable(x, y)
             return c
     return table.create(model, x, y)
-    
-def getDarkLightToken():
-    for c in table:
-        if c.model == "252af8c6-f383-46f9-ae8b-f2f302bdf6b0":
-            return c
-    return None
 
 def createCourageToken(group, x=0, y=0):
-     moveCourageToken(x, y)
-
-def moveCourageToken(x=0, y=0):
-    return moveCard("c5be15ab-f1a6-442c-aba1-c64ccc14961b", x, y)
-
-def getCourageToken():
-    for c in table:
-        if c.model == "c5be15ab-f1a6-442c-aba1-c64ccc14961b":
-            return c
-    return None
+    mute()
+    x = BoardStartx + 88
+    y = BoardStarty + 683
+    table.create("c5be15ab-f1a6-442c-aba1-c64ccc14961b", x, y, quantity = 20, persist = False)
 
 def flipCoin(group, x = 0, y = 0):
     mute()
@@ -261,8 +231,60 @@ def discard(card, x=0, y=0):
 def doDiscard(player, card, pile):
     card.moveTo(pile)
 
-
-# Need playersetup, addencounter or createcard, addresource, discard, something adapted to KO
+def defeat(card, x=0, y=0):
+    mute()
+    if card.controller != me:
+        whisper("{} does not control '{}'".format(me,card))
+        return
+        
+    pile = card.controller.piles['Victory Pile']
+    who = pile.controller
+    notify("{} discards '{}'".format(me, card))
+    if who != me:
+        card.setController(who)
+        remoteCall(who, "doDefeat", [me, card, pile])
+    else:
+        doDefeat(who, card, pile)
+        
+def doDefeat(player, card, pile):
+    card.moveTo(pile)
+    
+def escape(card, x=0, y=0):
+    mute()
+    if card.controller != me:
+        whisper("{} does not control '{}'".format(me,card))
+        return
+    
+    pile = shared.piles['Escaped_Villains']
+    who = pile.controller
+    notify("'{}' escapes!".format(card))
+    if who != me:
+        card.setcontroller(who)
+        remoteCall(who, "doEscape", [me, card, pile])
+    else:
+        doEscape(who, card, pile)
+        
+def doEscape(player, card, pile):
+    card.moveTo(pile)
+    
+def KO(card, x=0, y=0):
+    mute()
+    if card.controller !=me:
+        whisper("{} does not control '{}'".format(me,card))
+        return
+        
+    pile= shared.piles['KO_Pile']
+    who = pile.controller
+    notify("'{}' is KO'd".format(card))
+    if who != me:
+        card.setcontroller(who)
+        remoteCall(who, "doKO", [me, card, pile])
+    else:
+        doKO(who, card, pile)
+        
+def doKO(player, card, pile):
+    card.moveTo(pile)
+    
 
     
 #------------------------------------------------------------------------------
@@ -276,8 +298,6 @@ def randomDiscard(group):
     notify("{} randomly discards '{}'.".format(me, card))
     card.moveTo(me.piles['Discard Pile'])
 
-
-# Need discard and something adapted for KO
 
 #------------------------------------------------------------------------------
 # Pile Actions
@@ -328,7 +348,32 @@ def moveAllToPlayer(group):
         shuffle(me.piles['Player Deck'])
 
 # Move groups to correct piles on the table:
+
+def BigBad():
+    return shared.piles['BigBad_Pile']
+    
+def addBigBad(group=None, x=0, y=0):
+    nextBigBad(BigBad(), x, y, False)
+
+def nextBigBad(group, x, y, facedown, who=me):
+    mute()
+    
+    if group.controller != me:
+        remoteCall(group.controller, "nextBigBad", [group, x, y, facedown, me])
+        return
+    
+    #if len(group) == 0:
+    #   resetBigBad(group)
+    if len(group) == 0:
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToBigBad(card, facedown, who)
         
+def addToBigBad(card, facedown=False, who=me):
+    card.moveToTable(BigBadx, BigBady, facedown)
+
 def potentialSlayers():
     return shared.piles['Potential_Slayers']
 

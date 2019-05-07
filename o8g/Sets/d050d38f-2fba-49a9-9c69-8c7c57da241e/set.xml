@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Core Set" id="d050d38f-2fba-49a9-9c69-8c7c57da241e" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.3.12" version="0.0.1.5">
+<set xmlns:noNamespaceSchemaLocation="CardSet.xsd" name="Core Set" id="d050d38f-2fba-49a9-9c69-8c7c57da241e" gameId="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" gameVersion="1.0.4.4" version="0.0.1.5">
   <cards>
     <card id="3f874a18-4b9d-47f8-8432-2d4fe2eeb066" name="Billy Ford Fordham">
         <property name="card_type" value ="Bystander" />

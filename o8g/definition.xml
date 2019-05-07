@@ -4,107 +4,114 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.4.4"
-		scriptVersion="3.1.0.2"
-        markersize="16"	
+        version="1.0.4.11"
+        scriptVersion="3.1.0.2"
+        markersize="16"    
         tags="Legendary Buffy"
         description="Buffy standalone expansion of the Legendary Deckbuilding Game by Upper Deck"
         gameurl="https://github.com/Bullgator351/Buffy"
-		setsurl="https://www.dropbox.com/s/r9c2ujd87s881t9/Buffy.o8c?dl=0"
+        setsurl="https://www.dropbox.com/s/r9c2ujd87s881t9/Buffy.o8c?dl=0"
         authors="Bullgator"
         iconurl="https://i.imgur.com/NysMFtm.jpg"
-		usetwosidedtable="False" >
-	<scripts>
-		<script src="scripts/actions.py" />
-	</scripts>
-	<proxygen definitionsrc="proxy/proxydef.xml" />
-	<card back="cards/back.png" front="cards/front.png" width="128" height="180" cornerRadius="8">
+        usetwosidedtable="False" >
+    <scripts>
+        <script src="scripts/actions.py" />
+    </scripts>
+    <proxygen definitionsrc="proxy/proxydef.xml" />
+    <card back="cards/back.png" front="cards/front.png" width="128" height="180" cornerRadius="8">
         <property name="card_type" type="String" textKind="Tokens" />
         <property name="card_group" type="String" textKind="Tokens" />
         <property name="card_team" type="String" textKind="Tokens" />
-		<property name="card_class" type="String" textKind="Tokens" />
-		<property name="cost" type="String" textKind="Tokens" />
-		<property name="recruit_value" type="String" textKind="Tokens" />
-		<property name="recruit_bonus" type="String" textKind="Tokens" />
-		<property name="fight_value" type="String" textKind="Tokens" />
-		<property name="fight_bonus" type="String" textKind="Tokens" />
-		<property name="victory_points" type="String" textKind="Tokens" />
-		<property name="card_text" type="String" textKind="Tokens" />
+        <property name="card_class" type="String" textKind="Tokens" />
+        <property name="cost" type="String" textKind="Tokens" />
+        <property name="recruit_value" type="String" textKind="Tokens" />
+        <property name="recruit_bonus" type="String" textKind="Tokens" />
+        <property name="fight_value" type="String" textKind="Tokens" />
+        <property name="fight_bonus" type="String" textKind="Tokens" />
+        <property name="victory_points" type="String" textKind="Tokens" />
+        <property name="card_text" type="String" textKind="Tokens" />
             <size name="DarkLightToken" front="cards/252af8c6-f383-46f9-ae8b-f2f302bdf6b0.png" back="cards/252af8c6-f383-46f9-ae8b-f2f302bdf6b0.png" width="60" height="60" />
             <size name="CourageToken" front="cards/c5be15ab-f1a6-442c-aba1-c64ccc14961b.png" back="cards/c5be15ab-f1a6-442c-aba1-c64ccc14961b.png" width="40" height="40" />
     </card>
-	<gameboards src="background/playmat.png" width="1620" height="836" x="-810" y="-518" />
-	<table name="Table" visibility="undefined" width="1920" height="1080" background="table/sorrel-pear.png" backgroundStyle="uniform" >
-		<groupaction menu="Create Dark/Light Token" default="False" execute="createDarkLightToken" />
+    <gameboards src="background/playmat.png" width="1620" height="836" x="-810" y="-518" />
+    <table name="Table" visibility="undefined" width="1920" height="1080" background="table/sorrel-pear.png" backgroundStyle="uniform" >
+        <groupaction menu="Create Dark/Light Token" default="False" execute="createDarkLightToken" />
         <groupaction menu="Create Courage Token" default="False" execute="createCourageToken" />
         <groupaction menu="Coin Flip" default="False" execute="flipCoin" />
-		<groupaction menu="Random Number" default="False" execute="randomNumber" />
-		<cardaction menu="Flip Card" default="False" shortcut="ctrl+F" execute="flip" />
+        <groupaction menu="Random Number" default="False" execute="randomNumber" />
+        <cardaction menu="Flip Card" default="False" shortcut="ctrl+f" execute="flip" />
         <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
-		<groupaction menu="Reveal Villain" default="False" shortcut="ctrl+V" execute="addVillain" />
-        <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+H" execute="addHero" />
-        <groupaction menu="Reveal Potential" default="True" shortcut="ctrl+P" execute="addPotential" />
-        <groupaction menu="Reveal Bystander" default="True" shortcut="ctrl+B" execute="addBystander" />
-        <groupaction menu="Reveal Wound" default="True" shortcut="ctrl+W" execute="addWound" />
-	</table>
-	<player summary="Courage Tokens: {#Courage_Tokens} | Victory Points: {#Victory_Total}">
-		<counter name="Courage_Tokens" default="0" reset="False" icon="groups/default.png" />
-		<counter name="Victory_Total" default="0" reset="False" icon="groups/default.png" />
-		<hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
+        <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
+        <cardaction menu="Defeat Villain" default="True" shortcut="ctrl+shift+d" execute="defeat" />
+        <cardaction menu="Villain Escapes" default="False" shortcut="ctrl+e" execute="escape" />
+        <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
+        <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
+        <groupaction menu="Reveal Potential" default="True" shortcut="ctrl+p" execute="addPotential" />
+        <groupaction menu="Reveal Bystander" default="True" shortcut="ctrl+b" execute="addBystander" />
+        <groupaction menu="Reveal Wound" default="True" shortcut="ctrl+w" execute="addWound" />
+    </table>
+    <player summary="Courage Tokens: {#Courage_Tokens} | Victory Points: {#Victory_Total}">
+        <counter name="Courage_Tokens" default="0" reset="False" icon="groups/default.png" />
+        <counter name="Victory_Total" default="0" reset="False" icon="groups/default.png" />
+        <hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
             <cardaction menu="Play card" default="True" execute="playCard" />
-			<cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
+            <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
+            <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
             <groupaction menu="Random Discard" default="False" execute="randomDiscard" />
-		</hand>
+        </hand>
         <group name="Player Deck" visibility="none" icon="groups/deck.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
-            <groupaction menu="Draw" default="True" shortcut="ctrl+D" execute="draw" />
-			<groupaction menu="Draw Many" default="False" shortcut="ctrl+shift+D" execute="drawMany" />
-		</group>
+            <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
+            <groupaction menu="Draw" default="True" shortcut="ctrl+d" execute="draw" />
+            <groupaction menu="Draw Many" default="False" shortcut="ctrl+m" execute="drawMany" />
+        </group>
         <group name="Discard Pile" visibility="all" icon="groups/discardpile.png" >
             <groupaction menu="Shuffle into Player Deck" default="False" execute="moveAllToPlayer" />
         </group>
+        <group name="Victory Pile" visibility="all" icon="groups/discardpile.png" />
     </player>
-	<shared summary="Dark_Light: {#Dark_Light}">
+    <shared summary="Dark_Light: {#Dark_Light}">
         <counter name="Dark_Light" default="0" reset="False" icon="groups/default.png"/>
-		<group name="BigBad_Pile" visibility="all" icon="groups/default.png" />
-		<group name="Scheme_Pile" visibility="all" icon="groups/default.png" />
-		<group name="Twists_Pile" visibility="all" icon="groups/default.png" />
-		<group name="Master_Strikes" visibility="all" icon="groups/default.png" />
-		<group name="Escaped_Villains" visibility="all" icon="groups/default.png" />
-		<group name="KO_Pile" visibility="all" icon="groups/default.png" />
-		<group name="Potential_Slayers" visibility="all" icon="groups/default.png" >
-            <groupaction menu="Move to Potential Slayers Pile" default="True" shortcut="ctrl+P" execute="addPotential" />
+        <group name="BigBad_Pile" visibility="all" icon="groups/default.png" >
+            <groupaction menu="Move to BigBad Pile" default="True" shortcut="ctrl+shift+b" execute="addBigBad" />
+        </group>
+        <group name="Scheme_Pile" visibility="all" icon="groups/default.png" />
+        <group name="Twists_Pile" visibility="all" icon="groups/default.png" />
+        <group name="Master_Strikes" visibility="all" icon="groups/default.png" />
+        <group name="Escaped_Villains" visibility="all" icon="groups/default.png" />
+        <group name="KO_Pile" visibility="all" icon="groups/default.png" />
+        <group name="Potential_Slayers" visibility="all" icon="groups/default.png" >
+            <groupaction menu="Move to Potential Slayers Pile" default="True" shortcut="ctrl+p" execute="addPotential" />
         </group>
         <group name="Wounds" visibility="all" icon="groups/default.png" >
-            <groupaction menu="Move to Wounds Pile" default="True" shortcut="ctrl+W" execute="addWound" />
-		</group>
+            <groupaction menu="Move to Wounds Pile" default="True" shortcut="ctrl+w" execute="addWound" />
+        </group>
         <group name="Bystanders" visibility="none" icon="groups/default.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
+            <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
             <groupaction menu="Move to Bystanders Pile" default="True" shortcut="ctrl+b" execute="addBystander" />
-		</group>
-		<group name="Villain Deck" visibility="none" icon="groups/default.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
-		</group>
-		<group name="Hero Deck" visibility="none" icon="groups/default.png" >
-			<groupaction menu="Shuffle" default="False" shortcut="ctrl+S" execute="shuffle" />
-            <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+H" execute="addHero" />
-            <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+V" execute="addVillain" />
-		</group>
-	</shared>
-	<deck>
-		<section name="Grey" group="Player Deck" />
-	</deck>
-	<sharedDeck>
-		<section name="Big Bads" group="BigBad_Pile" />
-		<section name="Big Bad Tactics" group="BigBad_Pile" />
-		<section name="Schemes" group="Scheme_Pile" />
-		<section name="Master Strikes" group="Villain Deck" />
-		<section name="Scheme Twists" group="Villain Deck" />
-		<section name="Villains" group="Villain Deck" />
-		<section name="Henchmen" group="Villain Deck" />
-		<section name="Bystanders" group="Bystanders" />
-		<section name="Wounds" group="Wounds" />
-		<section name="Potential Slayers" group="Potential_Slayers" />
-		<section name="Heroes" group="Hero Deck" />
-	</sharedDeck>		
+        </group>
+        <group name="Villain Deck" visibility="none" icon="groups/default.png" >
+            <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
+            <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
+        </group>
+        <group name="Hero Deck" visibility="none" icon="groups/default.png" >
+            <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
+            <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
+        </group>
+    </shared>
+    <deck>
+        <section name="Grey" group="Player Deck" />
+    </deck>
+    <sharedDeck>
+        <section name="Big Bads" group="BigBad_Pile" />
+        <section name="Big Bad Tactics" group="BigBad_Pile" />
+        <section name="Schemes" group="Scheme_Pile" />
+        <section name="Master Strikes" group="Villain Deck" />
+        <section name="Scheme Twists" group="Villain Deck" />
+        <section name="Villains" group="Villain Deck" />
+        <section name="Henchmen" group="Villain Deck" />
+        <section name="Bystanders" group="Bystanders" />
+        <section name="Wounds" group="Wounds" />
+        <section name="Potential Slayers" group="Potential_Slayers" />
+        <section name="Heroes" group="Hero Deck" />
+    </sharedDeck>        
 </game>
