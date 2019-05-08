@@ -115,7 +115,7 @@ def flip(card, x = 0, y = 0):
 
 def createDarkLightToken(group, x=0, y=0):
     mute()
-    x = BoardStartx + 1480
+    x = BoardStartx + 1490
     y = BoardStarty + 450
     table.create("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y, quantity = 1, persist = False)
     
@@ -285,8 +285,6 @@ def KO(card, x=0, y=0):
 def doKO(player, card, pile):
     card.moveTo(pile)
     
-
-    
 #------------------------------------------------------------------------------
 # Hand Actions
 #------------------------------------------------------------------------------
@@ -297,7 +295,6 @@ def randomDiscard(group):
     if card is None: return
     notify("{} randomly discards '{}'.".format(me, card))
     card.moveTo(me.piles['Discard Pile'])
-
 
 #------------------------------------------------------------------------------
 # Pile Actions

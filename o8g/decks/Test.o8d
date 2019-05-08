@@ -3,7 +3,6 @@
   <section name="Grey" shared="False">
     <card qty="4" id="97089ad2-a862-46e9-b557-1d067c6e3fb7">Initiative Soldier</card>
     <card qty="8" id="4d3f1055-706a-4d13-b799-9b835ba2df17">Watcher</card>
-    <card qty="1" id="4df1c483-366c-4835-be70-bf2a04138b16">Queen C</card>
   </section>
   <section name="Big Bads" shared="True">
     <card qty="1" id="e8477fb9-c654-45ec-9ab1-859406e73108">Glorificus</card>

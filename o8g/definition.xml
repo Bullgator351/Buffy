@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.4.11"
+        version="1.0.4.14"
         scriptVersion="3.1.0.2"
         markersize="16"    
         tags="Legendary Buffy"
@@ -42,13 +42,14 @@
         <cardaction menu="Flip Card" default="False" shortcut="ctrl+f" execute="flip" />
         <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
         <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
-        <cardaction menu="Defeat Villain" default="True" shortcut="ctrl+shift+d" execute="defeat" />
+        <cardaction menu="Defeat Villain" default="False" shortcut="ctrl+shift+d" execute="defeat" />
         <cardaction menu="Villain Escapes" default="False" shortcut="ctrl+e" execute="escape" />
         <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
         <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
-        <groupaction menu="Reveal Potential" default="True" shortcut="ctrl+p" execute="addPotential" />
-        <groupaction menu="Reveal Bystander" default="True" shortcut="ctrl+b" execute="addBystander" />
-        <groupaction menu="Reveal Wound" default="True" shortcut="ctrl+w" execute="addWound" />
+        <groupaction menu="Reveal Potential" default="False" shortcut="ctrl+p" execute="addPotential" />
+        <groupaction menu="Reveal Bystander" default="False" shortcut="ctrl+b" execute="addBystander" />
+        <groupaction menu="Reveal Wound" default="False" shortcut="ctrl+w" execute="addWound" />
+        <groupaction menu="Reveal BigBad Tactic" default="False" shortcut="ctrl+shift+b" execute="addBigBad" />
     </table>
     <player summary="Courage Tokens: {#Courage_Tokens} | Victory Points: {#Victory_Total}">
         <counter name="Courage_Tokens" default="0" reset="False" icon="groups/default.png" />
@@ -65,13 +66,15 @@
             <groupaction menu="Draw Many" default="False" shortcut="ctrl+m" execute="drawMany" />
         </group>
         <group name="Discard Pile" visibility="all" icon="groups/discardpile.png" >
+            <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
             <groupaction menu="Shuffle into Player Deck" default="False" execute="moveAllToPlayer" />
         </group>
         <group name="Victory Pile" visibility="all" icon="groups/discardpile.png" />
     </player>
     <shared summary="Dark_Light: {#Dark_Light}">
         <counter name="Dark_Light" default="0" reset="False" icon="groups/default.png"/>
-        <group name="BigBad_Pile" visibility="all" icon="groups/default.png" >
+        <group name="BigBad_Pile" visibility="none" icon="groups/default.png" >
+            <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
             <groupaction menu="Move to BigBad Pile" default="True" shortcut="ctrl+shift+b" execute="addBigBad" />
         </group>
         <group name="Scheme_Pile" visibility="all" icon="groups/default.png" />
@@ -91,11 +94,11 @@
         </group>
         <group name="Villain Deck" visibility="none" icon="groups/default.png" >
             <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
-            <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
+            <groupaction menu="Reveal Villain" default="True" shortcut="ctrl+v" execute="addVillain" />
         </group>
         <group name="Hero Deck" visibility="none" icon="groups/default.png" >
             <groupaction menu="Shuffle" default="False" shortcut="ctrl+s" execute="shuffle" />
-            <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
+            <groupaction menu="Reveal Hero" default="True" shortcut="ctrl+h" execute="addHero" />
         </group>
     </shared>
     <deck>
