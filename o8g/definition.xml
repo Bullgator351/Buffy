@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.4.16"
+        version="1.0.4.17"
         scriptVersion="3.1.0.2"
         markersize="16"    
         tags="Legendary Buffy"
@@ -42,8 +42,8 @@
         <cardaction menu="Flip Card" default="False" shortcut="ctrl+f" execute="flip" />
         <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
         <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
-        <cardaction menu="Defeat Villain" default="True" shortcut="ctrl+shift+d" execute="defeat" />
-        <cardaction menu="Villain Escapes" default="False" shortcut="ctrl+e" execute="escape" />
+        <cardaction menu="Defeat Villain" default="False" shortcut="ctrl+shift+d" execute="defeat" />
+        <cardaction menu="Villain Escapes" default="True" shortcut="ctrl+e" execute="escape" />
         <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
         <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
         <groupaction menu="Reveal Potential" default="False" shortcut="ctrl+p" execute="addPotential" />
