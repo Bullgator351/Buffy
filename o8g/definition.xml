@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.4.14"
+        version="1.0.4.16"
         scriptVersion="3.1.0.2"
         markersize="16"    
         tags="Legendary Buffy"
@@ -18,7 +18,7 @@
         <script src="scripts/actions.py" />
     </scripts>
     <proxygen definitionsrc="proxy/proxydef.xml" />
-    <card back="cards/back.png" front="cards/front.png" width="128" height="180" cornerRadius="8">
+    <card back="cards/back.png" front="cards/front.png" width="126" height="176" cornerRadius="8">
         <property name="card_type" type="String" textKind="Tokens" />
         <property name="card_group" type="String" textKind="Tokens" />
         <property name="card_team" type="String" textKind="Tokens" />
@@ -42,7 +42,7 @@
         <cardaction menu="Flip Card" default="False" shortcut="ctrl+f" execute="flip" />
         <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
         <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
-        <cardaction menu="Defeat Villain" default="False" shortcut="ctrl+shift+d" execute="defeat" />
+        <cardaction menu="Defeat Villain" default="True" shortcut="ctrl+shift+d" execute="defeat" />
         <cardaction menu="Villain Escapes" default="False" shortcut="ctrl+e" execute="escape" />
         <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
         <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
@@ -55,7 +55,6 @@
         <counter name="Courage_Tokens" default="0" reset="False" icon="groups/default.png" />
         <counter name="Victory_Total" default="0" reset="False" icon="groups/default.png" />
         <hand name="Hand" visibility="me" ordered="False" icon="groups/hand.png" >
-            <cardaction menu="Play card" default="True" execute="playCard" />
             <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
             <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
             <groupaction menu="Random Discard" default="False" execute="randomDiscard" />

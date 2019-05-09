@@ -13,32 +13,32 @@ CourageToken = ("CourageToken", "c5be15ab-f1a6-442c-aba1-c64ccc14961b")
 # CardHeight = Card.height
 # 
 # For now we'll set their values here:
-# I found it is less confusing to deal with all the x's then all the y's
+# I found it's less confusing to deal with all the x's then all the y's
 # Playmat dimensions:
 BoardWidth = 1620
 BoardStartx = 0 - (BoardWidth / 2)
 # Width of Margin at the left end of the playmat:
 BoardMarginHoriz = 26
 # Width of standard card:
-CardWidth = 128
+CardWidth = 126
 # Width of box each pile goes in:
 BoxWidth = 150
 # Width of margin around cards inside each box:
-BoxMarginHoriz = 11
+BoxMarginHoriz = 12
 # Horiz distance between boxes:
 BoxSepWidth = 40
 # X coordinates to place a card in the proper box:
 FirstColumnx = BoardStartx + BoardMarginHoriz
 SecondColumnx = FirstColumnx + BoxWidth + BoxSepWidth
 ThirdColumnx = SecondColumnx + BoxWidth + BoxSepWidth
-FourthColumnx = BoardStartx + 1064 + BoxMarginHoriz
+FourthColumnx = BoardStartx + 1060 + BoxMarginHoriz
 FifthColumnx = FourthColumnx + BoxWidth + BoxSepWidth
 
 # Here are the y's
 BoardHeight = 836
 BoardStarty = -100 - (BoardHeight / 2)
 # Height of each card
-CardHeight = 180
+CardHeight = 176
 # Height of the box each pile goes in
 BoxHeight = 208
 # Height of margin at the top of the playmat
@@ -47,7 +47,7 @@ BoardMarginVert = 64
 UpperBoxSepHeight = 56
 LowerBoxSepHeight = 64
 # Amount of space between each card edge and border of box
-BoxMarginVert = 14
+BoxMarginVert = 16
 
 # Y coordinates of each row
 FirstRowy = BoardStarty + BoardMarginVert
@@ -96,35 +96,32 @@ VillainDeckx = FifthColumnx + BoxMarginHoriz
 VillainDecky = SecondRowy + BoxMarginVert
 HeroDeckx = FifthColumnx + BoxMarginHoriz
 HeroDecky = ThirdRowy + BoxMarginVert
-
-
-# Probably table card action but need to compare with flipcard
-
-def flip(card, x = 0, y = 0):
-    mute()
-    if card.isFaceUp == True:
-      notify("{} flips {} face down.".format(me, card))
-      card.isFaceUp = False
-    else:
-      card.isFaceUp = True
-      notify("{} flips {} face up.".format(me, card))
-
+#
+# To do list:
+#             - Automatically shuffle discard pile back into deck when draw many > cards left in deck
+#             - Hotkey control of position of Dark/Light token and update number in global summary
+#             - Place new villains and heroes into empty slot in Sunnydale/Library
+#             - Automatically bump villains down a spot to make room for new villain
+#                 and if appropriate trigger escape
+#             - Automatically update victory point tally in player summary
+#             - Currently the default (double-click) card action sends card to player victory pile and del sends card to player discard pile
+#                 Would like to have del do one or the other depending on card.type, then use default to play card from hand
+#
 #---------------------------------------------------------------------------
 # Table group actions
 #---------------------------------------------------------------------------
-
-def createDarkLightToken(group, x=0, y=0):
-    mute()
-    x = BoardStartx + 1490
-    y = BoardStarty + 450
-    table.create("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y, quantity = 1, persist = False)
-    
 def moveCard(model, x, y):
     for c in table:
         if c.model == model:
             c.moveToTable(x, y)
             return c
     return table.create(model, x, y)
+
+def createDarkLightToken(group, x=0, y=0):
+    mute()
+    x = BoardStartx + 1490
+    y = BoardStarty + 450
+    table.create("252af8c6-f383-46f9-ae8b-f2f302bdf6b0", x, y, quantity = 1, persist = False)
 
 def createCourageToken(group, x=0, y=0):
     mute()
@@ -159,13 +156,12 @@ def nextVillain(group, x, y, facedown, who=me):
         remoteCall(group.controller, "nextVillain", [group, x, y, facedown, me])
         return
         
-    #if len(group) == 0:
-    #    resetVillainDeck(group)
-    if len(group) == 0: # No cards
+    if len(group) == 0:
+        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
         return
         
     card = group.top()
-    if x == 0 and y == 0:  #Move to default position in the staging area
+    if x == 0 and y == 0:
         addToSunnydale(card, facedown, who)
 
 def addToSunnydale(card, facedown=False, who=me):
@@ -185,33 +181,126 @@ def nextHero(group, x, y, facedown, who=me):
         remoteCall(group.controller, "nextHero", [group, x, y, facedown, me])
         return
         
-    #if len(group) == 0:
-    #   resetHeroDeck(group)
-    if len(group) == 0: # No cards
+    if len(group) == 0:
+        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
         return
         
     card = group.top()
-    if x == 0 and y == 0:  #Move to default position in the staging area
+    if x == 0 and y == 0:
         addToLibrary(card, facedown, who)        
 
 def addToLibrary(card, facedown=False, who=me):
     card.moveToTable(HeroDeckx, HeroDecky, facedown)            
     notify("A new Hero gonna appearo in the Library: '{}'.".format(card))
 
+def BigBad():
+    return shared.piles['BigBad_Pile']
+    
+def addBigBad(group=None, x=0, y=0):
+    nextBigBad(BigBad(), x, y, False)
+
+def nextBigBad(group, x, y, facedown, who=me):
+    mute()
+    
+    if group.controller != me:
+        remoteCall(group.controller, "nextBigBad", [group, x, y, facedown, me])
+        return
+
+    if len(group) == 0:
+        notify("WOOHOO! YOU'VE WON THE GAME!")
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToBigBad(card, facedown, who)
+        
+def addToBigBad(card, facedown=False, who=me):
+    card.moveToTable(BigBadx, BigBady, facedown)
+
+def potentialSlayers():
+    return shared.piles['Potential_Slayers']
+
+def addPotential(group=None, x=0, y=0):
+    nextPotential(potentialSlayers(), x, y, False)
+    
+def nextPotential(group, x, y, facedown, who=me):
+    mute()
+    
+    if group.controller != me:
+        remoteCall(group.controller, "nextPotential", [group, x, y, facedown, me])
+        return
+
+    if len(group) == 0:
+        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToPotential(card, facedown, who)
+
+def addToPotential(card, facedown=False, who=me):
+    card.moveToTable(Potentialx, Potentialy, facedown)
+    
+def Wounds():
+    return shared.piles['Wounds']
+
+def addWound(group=None, x=0, y=0):
+    nextWound(Wounds(), x, y, False)
+    
+def nextWound(group, x, y, facedown, who=me):
+    mute()
+
+    if group.controller != me:
+        remoteCall(group.controller, "nextWound", [group, x, y, facedown, me])
+        return
+
+    if len(group) == 0:
+        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToWounds(card, facedown, who)
+
+def addToWounds(card, facedown=False, who=me):
+    card.moveToTable(Woundsx, Woundsy, facedown)
+
+def Bystanders():
+    return shared.piles['Bystanders']
+
+def addBystander(group=None, x=0, y=0):
+    nextBystander(Bystanders(), x, y, False)
+    
+def nextBystander(group, x, y, facedown, who=me):
+    mute()
+    
+    if group.controller != me:
+        remoteCall(group.controller, "nextBystander", [group, x, y, facedown, me])
+        return
+
+    if len(group) == 0:
+        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
+        return
+    
+    card = group.top()
+    if x == 0 and y == 0:
+        addToBystanders(card, facedown, who)
+
+def addToBystanders(card, facedown=True, who=me):
+    card.moveToTable(Bystandersx, Bystandersy, facedown)
 
 #---------------------------------------------------------------------------
 # Table card actions
 #---------------------------------------------------------------------------
 
-def flipcard(card, x = 0, y = 0):
+def flip(card, x = 0, y = 0):
     mute()
-    
-    if card.controller != me:
-        notify("{} gets {} to flip card".format(me, card.controller()))
-        remoteCall(card.controller, "flipcard", card)
-        return
-
-    cardx, cardy = card.position
+    if card.isFaceUp == True:
+      notify("{} flips {} face down.".format(me, card))
+      card.isFaceUp = False
+    else:
+      card.isFaceUp = True
+      notify("{} flips {} face up.".format(me, card))
     
 def discard(card, x=0, y=0):
     mute()
@@ -231,6 +320,24 @@ def discard(card, x=0, y=0):
 def doDiscard(player, card, pile):
     card.moveTo(pile)
 
+def KO(card, x=0, y=0):
+    mute()
+    if card.controller !=me:
+        whisper("{} does not control '{}'".format(me,card))
+        return
+        
+    pile= shared.piles['KO_Pile']
+    who = pile.controller
+    notify("'{}' is KO'd!".format(card))
+    if who != me:
+        card.setcontroller(who)
+        remoteCall(who, "doKO", [me, card, pile])
+    else:
+        doKO(who, card, pile)
+        
+def doKO(player, card, pile):
+    card.moveTo(pile)
+
 def defeat(card, x=0, y=0):
     mute()
     if card.controller != me:
@@ -239,7 +346,7 @@ def defeat(card, x=0, y=0):
         
     pile = card.controller.piles['Victory Pile']
     who = pile.controller
-    notify("{} discards '{}'".format(me, card))
+    notify("{} defeats '{}'!".format(me, card))
     if who != me:
         card.setController(who)
         remoteCall(who, "doDefeat", [me, card, pile])
@@ -257,7 +364,7 @@ def escape(card, x=0, y=0):
     
     pile = shared.piles['Escaped_Villains']
     who = pile.controller
-    notify("'{}' escapes!".format(card))
+    notify("Nooooo! '{}' escaped!".format(card))
     if who != me:
         card.setcontroller(who)
         remoteCall(who, "doEscape", [me, card, pile])
@@ -265,24 +372,6 @@ def escape(card, x=0, y=0):
         doEscape(who, card, pile)
         
 def doEscape(player, card, pile):
-    card.moveTo(pile)
-    
-def KO(card, x=0, y=0):
-    mute()
-    if card.controller !=me:
-        whisper("{} does not control '{}'".format(me,card))
-        return
-        
-    pile= shared.piles['KO_Pile']
-    who = pile.controller
-    notify("'{}' is KO'd".format(card))
-    if who != me:
-        card.setcontroller(who)
-        remoteCall(who, "doKO", [me, card, pile])
-    else:
-        doKO(who, card, pile)
-        
-def doKO(player, card, pile):
     card.moveTo(pile)
     
 #------------------------------------------------------------------------------
@@ -343,130 +432,3 @@ def moveAllToPlayer(group):
             c.moveTo(c.controller.piles['Player Deck'])
         notify("{} moves all cards from {} to the Player Deck".format(me, group.name))
         shuffle(me.piles['Player Deck'])
-
-# Move groups to correct piles on the table:
-
-def BigBad():
-    return shared.piles['BigBad_Pile']
-    
-def addBigBad(group=None, x=0, y=0):
-    nextBigBad(BigBad(), x, y, False)
-
-def nextBigBad(group, x, y, facedown, who=me):
-    mute()
-    
-    if group.controller != me:
-        remoteCall(group.controller, "nextBigBad", [group, x, y, facedown, me])
-        return
-    
-    #if len(group) == 0:
-    #   resetBigBad(group)
-    if len(group) == 0:
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToBigBad(card, facedown, who)
-        
-def addToBigBad(card, facedown=False, who=me):
-    card.moveToTable(BigBadx, BigBady, facedown)
-
-def potentialSlayers():
-    return shared.piles['Potential_Slayers']
-
-def addPotential(group=None, x=0, y=0):
-    nextPotential(potentialSlayers(), x, y, False)
-    
-def nextPotential(group, x, y, facedown, who=me):
-    mute()
-    
-    if group.controller != me:
-        remoteCall(group.controller, "nextPotential", [group, x, y, facedown, me])
-        return
-    #if len(group) == 0:
-    #   resetPotentialSlayers(group)
-    if len(group) == 0:
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToPotential(card, facedown, who)
-
-def addToPotential(card, facedown=False, who=me):
-    card.moveToTable(Potentialx, Potentialy, facedown)
-    
-def Wounds():
-    return shared.piles['Wounds']
-
-def addWound(group=None, x=0, y=0):
-    nextWound(Wounds(), x, y, False)
-    
-def nextWound(group, x, y, facedown, who=me):
-    mute()
-
-    if group.controller != me:
-        remoteCall(group.controller, "nextWound", [group, x, y, facedown, me])
-        return
-    #if len(group) == 0:
-    #   resetWounds(group)
-    if len(group) == 0:
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToWounds(card, facedown, who)
-
-def addToWounds(card, facedown=False, who=me):
-    card.moveToTable(Woundsx, Woundsy, facedown)
-
-def Bystanders():
-    return shared.piles['Bystanders']
-
-def addBystander(group=None, x=0, y=0):
-    nextBystander(Bystanders(), x, y, False)
-    
-def nextBystander(group, x, y, facedown, who=me):
-    mute()
-    
-    if group.controller != me:
-        remoteCall(group.controller, "nextBystander", [group, x, y, facedown, me])
-        return
-    #if len(group) == 0:
-    #   resetBystanders(group)
-    if len(group) == 0:
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToBystanders(card, facedown, who)
-
-def addToBystanders(card, facedown=True, who=me):
-    card.moveToTable(Bystandersx, Bystandersy, facedown)
-
-def addVillain(group=None, x=0, y=0):
-    nextVillain(villainDeck(), x, y, False)
-
-def nextVillain(group, x, y, facedown, who=me):
-    mute()
-
-    if group.controller != me:
-        remoteCall(group.controller, "nextVillain", [group, x, y, facedown, me])
-        return
-        
-    #if len(group) == 0:
-    #    resetVillainDeck(group)
-    if len(group) == 0: # No cards
-        return
-        
-    card = group.top()
-    if x == 0 and y == 0:  #Move to default position in the staging area
-        addToSunnydale(card, facedown, who)
-
-def addToSunnydale(card, facedown=False, who=me):
-    card.moveToTable(VillainDeckx, VillainDecky, facedown)            
-    notify("A new villain is chillin' in Sunnydale: '{}'.".format(card))
-
-
-
-# Need something to track victory conditions - ideally put the number in the global hand display
-# Also track Dark/Light in hand display
