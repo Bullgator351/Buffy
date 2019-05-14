@@ -143,151 +143,84 @@ def randomNumber(group, x=0, y=0):
     if max == None: return
     notify("{} randomly selects {} (1 to {})".format(me, rnd(1,max), max))
  
+#Hero
+#Villain
+#BigBad/tactic
+#Potential Slayer
+#Wound
+#Bystander
+
 def villainDeck():
-    return shared.piles['Villain Deck'] 
+    return shared.piles['Villain Deck']
 
 def addVillain(group=None, x=0, y=0):
-    nextVillain(villainDeck(), x, y, False)
-
-def nextVillain(group, x, y, facedown, who=me):
     mute()
-
-    if group.controller != me:
-        remoteCall(group.controller, "nextVillain", [group, x, y, facedown, me])
-        return
-        
-    if len(group) == 0:
-        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
-        return
-        
-    card = group.top()
-    if x == 0 and y == 0:
-        addToSunnydale(card, facedown, who)
-
-def addToSunnydale(card, facedown=False, who=me):
-    card.moveToTable(VillainDeckx, VillainDecky, facedown)            
-    notify("A new villain is chillin' in Sunnydale: '{}'.".format(card))
+    x = VillainDeckx
+    y = VillainDecky
+    nextCardToMove(villainDeck(), x, y, False)
 
 def heroDeck():
-    return shared.piles['Hero Deck'] 
+    return shared.piles['Hero Deck']
 
 def addHero(group=None, x=0, y=0):
-    nextHero(heroDeck(), x, y, False)
-        
-def nextHero(group, x, y, facedown, who=me):
     mute()
-
-    if group.controller != me:
-        remoteCall(group.controller, "nextHero", [group, x, y, facedown, me])
-        return
-        
-    if len(group) == 0:
-        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
-        return
-        
-    card = group.top()
-    if x == 0 and y == 0:
-        addToLibrary(card, facedown, who)        
-
-def addToLibrary(card, facedown=False, who=me):
-    card.moveToTable(HeroDeckx, HeroDecky, facedown)            
-    notify("A new Hero gonna appearo in the Library: '{}'.".format(card))
+    x = HeroDeckx
+    y = HeroDecky
+    nextCardToMove(heroDeck(), x, y, False)
 
 def BigBad():
     return shared.piles['BigBad_Pile']
-    
+
 def addBigBad(group=None, x=0, y=0):
-    nextBigBad(BigBad(), x, y, False)
-
-def nextBigBad(group, x, y, facedown, who=me):
     mute()
-    
-    if group.controller != me:
-        remoteCall(group.controller, "nextBigBad", [group, x, y, facedown, me])
-        return
-
-    if len(group) == 0:
-        notify("WOOHOO! YOU'VE WON THE GAME!")
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToBigBad(card, facedown, who)
-        
-def addToBigBad(card, facedown=False, who=me):
-    card.moveToTable(BigBadx, BigBady, facedown)
+    x = BigBadx
+    y = BigBady
+    nextCardToMove(BigBad(), x, y, False)
 
 def potentialSlayers():
     return shared.piles['Potential_Slayers']
 
 def addPotential(group=None, x=0, y=0):
-    nextPotential(potentialSlayers(), x, y, False)
-    
-def nextPotential(group, x, y, facedown, who=me):
     mute()
-    
-    if group.controller != me:
-        remoteCall(group.controller, "nextPotential", [group, x, y, facedown, me])
-        return
+    x = Potentialx
+    y = Potentialy
+    nextCardToMove(potentialSlayers(), x, y, False)
 
-    if len(group) == 0:
-        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToPotential(card, facedown, who)
-
-def addToPotential(card, facedown=False, who=me):
-    card.moveToTable(Potentialx, Potentialy, facedown)
-    
 def Wounds():
     return shared.piles['Wounds']
 
 def addWound(group=None, x=0, y=0):
-    nextWound(Wounds(), x, y, False)
-    
-def nextWound(group, x, y, facedown, who=me):
     mute()
-
-    if group.controller != me:
-        remoteCall(group.controller, "nextWound", [group, x, y, facedown, me])
-        return
-
-    if len(group) == 0:
-        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
-        return
-    
-    card = group.top()
-    if x == 0 and y == 0:
-        addToWounds(card, facedown, who)
-
-def addToWounds(card, facedown=False, who=me):
-    card.moveToTable(Woundsx, Woundsy, facedown)
+    x = Woundsx
+    y = Woundsy
+    nextCardToMove(Wounds(), x, y, False)
 
 def Bystanders():
     return shared.piles['Bystanders']
 
 def addBystander(group=None, x=0, y=0):
-    nextBystander(Bystanders(), x, y, False)
-    
-def nextBystander(group, x, y, facedown, who=me):
     mute()
-    
+    x = Bystandersx
+    y = Bystandersy
+    nextCardToMove(Bystanders(), x, y, False)
+
+def nextCardToMove(group, x, y, facedown, who=me):
+    mute()
+
     if group.controller != me:
-        remoteCall(group.controller, "nextBystander", [group, x, y, facedown, me])
+        remoteCall(group.controller, "nextCardToMove", [group, x, y, facedown, me])
         return
 
     if len(group) == 0:
-        notify("HAL9000 voice: I'm afraid I can't let you do that, Dave.")
+        notify("None Left")
         return
     
     card = group.top()
-    if x == 0 and y == 0:
-        addToBystanders(card, facedown, who)
+    addToTablePile(card, x, y, facedown, who)
 
-def addToBystanders(card, facedown=True, who=me):
-    card.moveToTable(Bystandersx, Bystandersy, facedown)
+def addToTablePile(card, x, y, facedown=False, who=me):
+    card.moveToTable(x, y, facedown)
+    notify("{} adds {} to the table.".format(who, card))
 
 #---------------------------------------------------------------------------
 # Table card actions
@@ -304,19 +237,30 @@ def flip(card, x = 0, y = 0):
     
 def discard(card, x=0, y=0):
     mute()
-    if card.controller != me:
-        whisper("{} does not control '{}' - discard cancelled".format(me, card))
-        return
     
-    pile = card.controller.piles['Discard Pile']
-    who = pile.controller
-    notify("{} discards '{}'".format(me, card))
-    if who != me:
-        card.setController(who)        
-        remoteCall(who, "doDiscard", [me, card, pile])
-    else:
-        doDiscard(who, card, pile)
-        
+    if card.controller !=me:
+        whisper("{} does not control {}".format(me,card))
+        return
+
+    if card.card_type == "Bystander" or card.card_type == "Villain" or card.card_type == "Tactics":
+        pile = card.controller.piles['Victory Pile']
+        who = pile.controller
+        notify ("{} moves {} to their {}".format(me, card, pile))
+        if who != me:
+            card.setController(who)
+            remoteCall(who, "doDiscard", [me, card, pile])
+        else:
+            doDiscard(who, card, pile)
+    else: 
+        pile = card.controller.piles['Discard Pile']
+        who = pile.controller
+        notify("{} discards '{}'".format(me, card))
+        if who != me:
+            card.setController(who)        
+            remoteCall(who, "doDiscard", [me, card, pile])
+        else:
+            doDiscard(who, card, pile)
+    
 def doDiscard(player, card, pile):
     card.moveTo(pile)
 

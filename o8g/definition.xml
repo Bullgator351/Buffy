@@ -4,7 +4,7 @@
         name="Legendary - Buffy the Vampire Slayer"
         id="ff58fb42-fe9d-499e-afdb-ecdcf1939c99" 
         octgnVersion="3.3.132.0"
-        version="1.0.4.17"
+        version="1.0.4.28"
         scriptVersion="3.1.0.2"
         markersize="16"    
         tags="Legendary Buffy"
@@ -18,6 +18,9 @@
         <script src="scripts/actions.py" />
     </scripts>
     <proxygen definitionsrc="proxy/proxydef.xml" />
+    <documents>
+        <document name="Game Rules" icon="groups/default.png" src="documents/2017_Legendary_Buffy_Rulebook.pdf" />
+    </documents>
     <card back="cards/back.png" front="cards/front.png" width="126" height="176" cornerRadius="8">
         <property name="card_type" type="String" textKind="Tokens" />
         <property name="card_group" type="String" textKind="Tokens" />
@@ -40,10 +43,10 @@
         <groupaction menu="Coin Flip" default="False" execute="flipCoin" />
         <groupaction menu="Random Number" default="False" execute="randomNumber" />
         <cardaction menu="Flip Card" default="False" shortcut="ctrl+f" execute="flip" />
-        <cardaction menu="Discard" default="False" shortcut="Del" execute="discard" />
+        <cardaction menu="Discard" default="True" shortcut="Del" execute="discard" />
         <cardaction menu="KO" default="False" shortcut="ctrl+k" execute="KO" />
         <cardaction menu="Defeat Villain" default="False" shortcut="ctrl+shift+d" execute="defeat" />
-        <cardaction menu="Villain Escapes" default="True" shortcut="ctrl+e" execute="escape" />
+        <cardaction menu="Villain Escapes" default="False" shortcut="ctrl+e" execute="escape" />
         <groupaction menu="Reveal Villain" default="False" shortcut="ctrl+v" execute="addVillain" />
         <groupaction menu="Reveal Hero" default="False" shortcut="ctrl+h" execute="addHero" />
         <groupaction menu="Reveal Potential" default="False" shortcut="ctrl+p" execute="addPotential" />
